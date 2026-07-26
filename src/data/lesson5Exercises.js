@@ -16,7 +16,7 @@ export const lesson5Exercises = [
     title: "حساب مجموع السلة (Cart Total)",
     difficulty: "سهل",
     context:
-      "لديك List<double> prices = [49.9, 120.0, 15.5, 79.99] تمثل أثمنة المنتجات في سلة الشراء.",
+      "لديك List<double> prices = [48.9, 120.0, 15.5, 79.99] تمثل أثمنة المنتجات في سلة الشراء.",
     questions: [
       "أنشئ متغيراً double total = 0.",
       "استعمل حلقة for لجمع كل الأثمنة داخل total.",
