@@ -13,7 +13,7 @@
   margin-bottom: 24px;
   padding: 20px 24px;
   border-radius: 24px;
-  background: linear-gradient(35deg, #56DDCA, #0179B3);
+  background: linear-gradient(35deg, #56ddca, #0179b3);
   color: white;
   box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
 }
@@ -98,7 +98,7 @@
 }
 
 .lesson-link.active {
-  background: #0179B3;
+  background: #0179b3;
   color: white;
 }
 
@@ -208,7 +208,8 @@
 
 .lesson-card code {
   color: #f8fafc;
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family:
+    "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 1rem;
   line-height: 1.6;
   direction: ltr;
@@ -339,4 +340,89 @@
 
 .exercise-questions li {
   margin-bottom: 0.35rem;
+}
+
+/* Responsive refinements */
+@media (max-width: 1100px) {
+  .content-grid {
+    grid-template-columns: 260px 1fr;
+    gap: 16px;
+  }
+
+  .brand-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .topbar h1 {
+    font-size: 1.25rem;
+  }
+
+  .sidebar {
+    padding: 16px;
+  }
+
+  .lesson-card pre {
+    padding: 16px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    padding: 14px;
+  }
+
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .topbar h1 {
+    font-size: 1.2rem;
+  }
+
+  .lesson-card pre {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .brand-logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .topbar h1 {
+    font-size: 1.05rem;
+  }
+
+  .lesson-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .nav-button {
+    padding: 8px 12px;
+  }
+}
+
+/* Exercises grid: 2 columns on medium+ screens */
+@media (min-width: 700px) {
+  .exercises-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Make media and images scale nicely */
+.brand-logo,
+.lesson-card img,
+.exercise-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure code blocks are usable on small screens */
+.lesson-card pre {
+  white-space: pre-wrap;
+  word-break: break-word;
 }
