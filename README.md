@@ -1,16 +1,26 @@
-# React + Vite
+# Le Cahier Dart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Site d'apprentissage de Dart, en français, construit avec React + Vite.
 
-Currently, two official plugins are available:
+## Démarrer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+## Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `src/pages` — les pages (Accueil, Leçons, Détail de leçon, Exercices, À propos)
+- `src/components/lesson` — carte de leçon, bloc de code
+- `src/components/common` — Navbar, Footer
+- `src/components/layout` — MainLayout
+- `src/data/lessons` — contenu des leçons (un fichier par leçon)
+- `src/styles` — variables CSS (palette, typographie) et styles globaux
 
-## Expanding the ESLint configuration
+## Thème
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Police display / titres : **Caveat** (manuscrite)
+- Police de corps de texte : **Public Sans** (lisibilité)
+- Police de code : **Fira Code**
+- Palette "cahier d'écolier" : papier crème, encre bleu-nuit, accent bleu Dart, accent corail

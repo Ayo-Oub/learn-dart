@@ -1,0 +1,128 @@
+@import './variables.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.65;
+  /* fond "papier ligné" très discret */
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 35px,
+    var(--rule-line) 36px
+  );
+  background-attachment: local;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+h1, h2, h3, h4,
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.15;
+  margin: 0 0 0.4em;
+}
+
+h1 { font-size: var(--fs-display-xl); }
+h2 { font-size: var(--fs-display-lg); }
+h3 { font-size: var(--fs-display-md); }
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--dart-blue);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+/* Focus visible clavier — accessibilité */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--dart-blue);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+code, pre, .code-block, kbd {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.app-shell main {
+  flex: 1;
+}
+
+/* Élément signature : marge rouge façon cahier d'écolier, visible sur les pages de contenu */
+.notebook-page {
+  position: relative;
+  padding-left: 48px;
+}
+
+.notebook-page::before {
+  content: '';
+  position: absolute;
+  left: 28px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--margin-line);
+  opacity: 0.55;
+}
+
+@media (max-width: 640px) {
+  .notebook-page {
+    padding-left: 28px;
+  }
+  .notebook-page::before {
+    left: 14px;
+  }
+}

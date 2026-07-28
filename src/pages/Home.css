@@ -1,0 +1,123 @@
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 72px;
+}
+
+.hero__eyebrow {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--accent-coral);
+  margin-bottom: 6px;
+}
+
+.text-dart {
+  color: var(--dart-blue);
+}
+
+.hero__lede {
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+  max-width: 46ch;
+  margin-top: 16px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  padding: 10px 26px;
+  border-radius: 30px;
+  border: 2px solid var(--ink);
+  transition: transform 0.15s ease;
+  display: inline-block;
+}
+.btn:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.btn--primary {
+  background: var(--dart-blue);
+  border-color: var(--dart-blue-dark);
+  color: white;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--ink);
+}
+
+.hero__notebook {
+  display: flex;
+  justify-content: center;
+}
+
+.notebook-card {
+  background: var(--paper-alt);
+  border: 2px solid var(--ink);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+  box-shadow: 6px 6px 0 var(--paper-shadow);
+  transform: rotate(-1.5deg);
+  max-width: 340px;
+}
+
+.notebook-card__label {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+.notebook-card__code {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--ink);
+  margin: 12px 0 0;
+  white-space: pre-wrap;
+}
+
+.why {
+  padding-bottom: 80px;
+}
+
+.why h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.why__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.why__card {
+  background: var(--paper-alt);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: center;
+}
+
+.why__mark {
+  font-size: 1.8rem;
+  color: var(--accent-coral);
+}
+
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .why__grid {
+    grid-template-columns: 1fr;
+  }
+}
