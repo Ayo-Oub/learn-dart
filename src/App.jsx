@@ -4,6 +4,7 @@ import Home from './pages/Home.jsx'
 import Lessons from './pages/Lessons.jsx'
 import LessonDetail from './pages/LessonDetail.jsx'
 import Exercises from './pages/Exercises.jsx'
+import ExercisesByLesson from './pages/ExercisesByLesson.jsx'
 import About from './pages/About.jsx'
 import NotFound from './pages/NotFound.jsx'
 
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/lecons" element={<Lessons />} />
         <Route path="/lecons/:slug" element={<LessonDetail />} />
         <Route path="/exercices" element={<Exercises />} />
+        <Route path="/exercices/:slug" element={<ExercisesByLesson />} />
         <Route path="/a-propos" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

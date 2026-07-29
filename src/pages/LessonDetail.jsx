@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import lessons, { getLessonBySlug } from '../data/lessons/index.js'
+import { getExercisesByLesson } from '../data/exercises/index.js'
 import LessonSection from '../components/lesson/LessonSection.jsx'
 
 export default function LessonDetail() {
@@ -17,9 +18,10 @@ export default function LessonDetail() {
   }
 
   const nextLesson = lesson.next ? getLessonBySlug(lesson.next) : null
+  const lessonExercises = getExercisesByLesson(lesson.slug)
 
   return (
-    <section className="container notebook-page" style={{ padding: '48px 24px 80px', maxWidth: 760 }}>
+    <section className="container" style={{ padding: '48px 24px 80px', maxWidth: 760 }}>
       <Link to="/lecons" style={{ fontFamily: 'var(--font-display)', fontSize: '1.1rem' }}>
         ← Toutes les leçons
       </Link>
@@ -94,6 +96,28 @@ export default function LessonDetail() {
               Indice : {lesson.exercisePreview.hint}
             </p>
           )}
+        </div>
+      )}
+
+      {/* Exercices liés à cette leçon */}
+      {lessonExercises.length > 0 && (
+        <div
+          style={{
+            background: 'var(--paper-alt)',
+            border: '2px dashed var(--dart-blue)',
+            borderRadius: 'var(--radius-md)',
+            padding: '20px 24px',
+            margin: '28px 0',
+          }}
+        >
+          <h3 style={{ marginTop: 0, fontSize: '1.3rem' }}>✎ Exercices de cette leçon</h3>
+          <ul style={{ margin: 0, paddingLeft: '1.2em' }}>
+            {lessonExercises.map((exercise) => (
+              <li key={exercise.id} style={{ marginBottom: 4 }}>
+                <Link to={`/exercices/${lesson.slug}#${exercise.id}`}>{exercise.title}</Link>
+              </li>
+            ))}
+          </ul>
         </div>
       )}
 

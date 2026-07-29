@@ -2,8 +2,6 @@
   /* ===== Palette — "cahier d'écolier" ===== */
   --paper: #F7F1E3;         /* fond papier crème */
   --paper-alt: #EFE6D3;      /* fond papier légèrement plus soutenu (cartes) */
-  --rule-line: #C9D6E3;       /* lignes horizontales façon cahier */
-  --margin-line: #D9776B;     /* ligne de marge rouge */
 
   --ink: #262A3D;             /* texte principal, encre bleu-nuit */
   --ink-soft: #5B5F73;        /* texte secondaire */

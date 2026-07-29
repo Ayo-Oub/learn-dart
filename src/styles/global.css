@@ -15,14 +15,6 @@ body {
   font-family: var(--font-body);
   font-size: var(--fs-body);
   line-height: 1.65;
-  /* fond "papier ligné" très discret */
-  background-image: repeating-linear-gradient(
-    to bottom,
-    transparent,
-    transparent 35px,
-    var(--rule-line) 36px
-  );
-  background-attachment: local;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -101,28 +93,3 @@ img {
   flex: 1;
 }
 
-/* Élément signature : marge rouge façon cahier d'écolier, visible sur les pages de contenu */
-.notebook-page {
-  position: relative;
-  padding-left: 48px;
-}
-
-.notebook-page::before {
-  content: '';
-  position: absolute;
-  left: 28px;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: var(--margin-line);
-  opacity: 0.55;
-}
-
-@media (max-width: 640px) {
-  .notebook-page {
-    padding-left: 28px;
-  }
-  .notebook-page::before {
-    left: 14px;
-  }
-}

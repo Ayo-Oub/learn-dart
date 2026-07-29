@@ -1,0 +1,68 @@
+.exercise-card {
+  background: var(--paper-alt);
+  border-radius: var(--radius-md);
+  padding: 24px 26px;
+  margin-bottom: 24px;
+  scroll-margin-top: 90px;
+}
+
+.exercise-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.exercise-card__number {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--dart-blue);
+}
+
+.exercise-card__difficulty {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.exercise-card__title {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+}
+
+.exercise-card__statement {
+  color: var(--ink);
+  white-space: pre-line;
+}
+
+.exercise-card__hint {
+  margin: 12px 0;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.exercise-card__hint summary {
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--dart-blue);
+}
+
+.exercise-card__hint p {
+  margin: 8px 0 0;
+}
+
+.exercise-card__toggle {
+  background: var(--dart-blue);
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 8px 20px;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+.exercise-card__toggle:hover {
+  background: var(--dart-blue-dark);
+}
