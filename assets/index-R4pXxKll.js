@@ -90,7 +90,7 @@ print('Dans 5 ans, j\\'aurai \${age + 5} ans.');`}],codeExample:`void main() {
   bool estEtudiant = true;
 
   print('$prenom a $age ans et mesure $taille m.');
-}`,keyPoints:[`Les 4 types de base : String, int, double, bool.`,`var laisse Dart deviner le type ; le type ne change plus ensuite.`,`final = fixé à l’exécution, const = fixé avant l’exécution.`,"On insère une variable dans un texte avec $variable ou ${expression}."],exercisePreview:{prompt:`Déclare trois variables (ton prénom, ton âge, ta ville) et affiche-les dans une seule phrase avec l'interpolation de chaînes.`,hint:`Utilise $nomDeVariable directement à l'intérieur d'une chaîne entre guillemets.`},next:null},{id:3,slug:`conditions`,title:`Les conditions`,summary:`Comparer des valeurs et faire des choix dans ton programme avec if, else et else if.`,duration:`14 min`,objectives:[`Utiliser les opérateurs de comparaison (==, !=, <, >, <=, >=)`,`Combiner des conditions avec les opérateurs logiques (&&, ||, !)`,`Écrire une structure if / else if / else`,`Utiliser l'opérateur ternaire pour une condition courte`],sections:[{id:`operateurs-de-comparaison`,heading:`Les opérateurs de comparaison`,content:"Pour comparer deux valeurs, Dart utilise les mêmes opérateurs que la\nplupart des langages. Le résultat d'une comparaison est toujours un **bool**\n(`true` ou `false`).\n\n- `==` : égal à\n- `!=` : différent de\n- `<` : strictement inférieur à\n- `>` : strictement supérieur à\n- `<=` : inférieur ou égal à\n- `>=` : supérieur ou égal à",code:`int age = 20;
+}`,keyPoints:[`Les 4 types de base : String, int, double, bool.`,`var laisse Dart deviner le type ; le type ne change plus ensuite.`,`final = fixé à l’exécution, const = fixé avant l’exécution.`,"On insère une variable dans un texte avec $variable ou ${expression}."],exercisePreview:{prompt:`Déclare trois variables (ton prénom, ton âge, ta ville) et affiche-les dans une seule phrase avec l'interpolation de chaînes.`,hint:`Utilise $nomDeVariable directement à l'intérieur d'une chaîne entre guillemets.`},next:`conditions`},{id:3,slug:`conditions`,title:`Les conditions`,summary:`Comparer des valeurs et faire des choix dans ton programme avec if, else et else if.`,duration:`14 min`,objectives:[`Utiliser les opérateurs de comparaison (==, !=, <, >, <=, >=)`,`Combiner des conditions avec les opérateurs logiques (&&, ||, !)`,`Écrire une structure if / else if / else`,`Utiliser l'opérateur ternaire pour une condition courte`],sections:[{id:`operateurs-de-comparaison`,heading:`Les opérateurs de comparaison`,content:"Pour comparer deux valeurs, Dart utilise les mêmes opérateurs que la\nplupart des langages. Le résultat d'une comparaison est toujours un **bool**\n(`true` ou `false`).\n\n- `==` : égal à\n- `!=` : différent de\n- `<` : strictement inférieur à\n- `>` : strictement supérieur à\n- `<=` : inférieur ou égal à\n- `>=` : supérieur ou égal à",code:`int age = 20;
 
 print(age == 18);   // false
 print(age >= 18);   // true
@@ -133,7 +133,7 @@ print(statut);   // majeur`}],codeExample:`void main() {
   } else {
     print('Tu es encore mineur.');
   }
-}`,keyPoints:[`Une comparaison (==, !=, <, >, <=, >=) donne toujours un bool.`,`&& = ET (les deux vraies), || = OU (au moins une vraie), ! = NON.`,`if / else if / else exécute le premier bloc dont la condition est vraie.`,`condition ? siVrai : siFaux remplace un if/else simple sur une ligne.`],exercisePreview:{prompt:`Écris un programme qui affiche 'Pair' ou 'Impair' selon la valeur d'un nombre entier.`,hint:`Un nombre est pair si le reste de sa division par 2 est égal à 0 : nombre % 2 == 0.`},next:null},{id:4,slug:`boucles`,title:`Les boucles`,summary:`Répéter des actions automatiquement avec for, while et do-while.`,duration:`13 min`,objectives:[`Comprendre à quoi sert une boucle`,`Écrire une boucle for pour répéter un nombre de fois connu`,`Écrire une boucle while pour répéter tant qu’une condition est vraie`,`Connaître la différence entre while et do-while`,`Utiliser break et continue pour contrôler une boucle`],sections:[{id:`pourquoi-des-boucles`,heading:`Pourquoi des boucles ?`,content:`Une boucle permet de répéter un bloc de code plusieurs fois, sans avoir à
+}`,keyPoints:[`Une comparaison (==, !=, <, >, <=, >=) donne toujours un bool.`,`&& = ET (les deux vraies), || = OU (au moins une vraie), ! = NON.`,`if / else if / else exécute le premier bloc dont la condition est vraie.`,`condition ? siVrai : siFaux remplace un if/else simple sur une ligne.`],exercisePreview:{prompt:`Écris un programme qui affiche 'Pair' ou 'Impair' selon la valeur d'un nombre entier.`,hint:`Un nombre est pair si le reste de sa division par 2 est égal à 0 : nombre % 2 == 0.`},next:`boucles`},{id:4,slug:`boucles`,title:`Les boucles`,summary:`Répéter des actions automatiquement avec for, while et do-while.`,duration:`13 min`,objectives:[`Comprendre à quoi sert une boucle`,`Écrire une boucle for pour répéter un nombre de fois connu`,`Écrire une boucle while pour répéter tant qu’une condition est vraie`,`Connaître la différence entre while et do-while`,`Utiliser break et continue pour contrôler une boucle`],sections:[{id:`pourquoi-des-boucles`,heading:`Pourquoi des boucles ?`,content:`Une boucle permet de répéter un bloc de code plusieurs fois, sans avoir à
 recopier ce bloc à la main. Plutôt que d'écrire cinq fois \`print(...)\`, on
 écrit une seule boucle qui le fait cinq fois pour nous.`,code:`// Sans boucle
 print('Ligne 1');
@@ -187,7 +187,7 @@ for (int i = 0; i < 5; i++) {
       print('$i est impair');
     }
   }
-}`,keyPoints:[`for est idéal quand on connaît le nombre de répétitions à l’avance.`,`while répète tant qu’une condition est vraie ; attention aux boucles infinies.`,`do-while exécute le bloc au moins une fois, même si la condition est fausse.`,`break arrête la boucle ; continue passe directement au tour suivant.`],exercisePreview:{prompt:`Écris une boucle qui affiche les nombres de 1 à 10, mais qui saute le nombre 7.`,hint:`Utilise continue à l’intérieur d’un if qui teste si le nombre vaut 7.`},next:null},{id:5,slug:`fonctions`,title:`Les fonctions`,summary:`Déclarer des fonctions, gérer leurs paramètres, et comprendre les callbacks et les closures.`,duration:`18 min`,objectives:[`Déclarer une fonction : type de retour, nom, paramètres`,`Utiliser des paramètres positionnels, nommés, optionnels et des valeurs par défaut`,`Écrire une fonction fléchée avec =>`,`Passer une fonction en paramètre (callback) avec une fonction anonyme`,`Comprendre les closures et la portée des variables`],sections:[{id:`declaration-de-base`,heading:`Déclaration de base`,content:`Une fonction se déclare avec trois éléments : un **type de retour**, un
+}`,keyPoints:[`for est idéal quand on connaît le nombre de répétitions à l’avance.`,`while répète tant qu’une condition est vraie ; attention aux boucles infinies.`,`do-while exécute le bloc au moins une fois, même si la condition est fausse.`,`break arrête la boucle ; continue passe directement au tour suivant.`],exercisePreview:{prompt:`Écris une boucle qui affiche les nombres de 1 à 10, mais qui saute le nombre 7.`,hint:`Utilise continue à l’intérieur d’un if qui teste si le nombre vaut 7.`},next:`fonctions`},{id:5,slug:`fonctions`,title:`Les fonctions`,summary:`Déclarer des fonctions, gérer leurs paramètres, et comprendre les callbacks et les closures.`,duration:`18 min`,objectives:[`Déclarer une fonction : type de retour, nom, paramètres`,`Utiliser des paramètres positionnels, nommés, optionnels et des valeurs par défaut`,`Écrire une fonction fléchée avec =>`,`Passer une fonction en paramètre (callback) avec une fonction anonyme`,`Comprendre les closures et la portée des variables`],sections:[{id:`declaration-de-base`,heading:`Déclaration de base`,content:`Une fonction se déclare avec trois éléments : un **type de retour**, un
 **nom**, et une liste de **paramètres** entre parenthèses.
 
 Si la fonction ne renvoie aucune valeur, on utilise **void** comme type de
@@ -367,7 +367,7 @@ print(notes.join(', '));         // 9, 12, 15, 18`}],codeExample:`void main() {
   double moyenne = somme / notes.length;
   print('Notes : \${notes.join(', ')}');
   print('Moyenne : $moyenne');
-}`,keyPoints:[`List<Type> stocke plusieurs valeurs du même type, dans un ordre précis.`,`Le premier élément est à l’index 0 ; .length donne le nombre d’éléments.`,`.add() ajoute à la fin, .insert(index, valeur) insère à une position précise.`,`.remove()/.removeAt()/.removeLast()/.clear() retirent un ou tous les éléments.`,`for-in et .forEach() parcourent tous les éléments ; ...liste combine des listes.`,`indexOf, sort, reversed, sublist et join complètent la boîte à outils des listes.`],exercisePreview:{prompt:`Crée une liste de 5 nombres entiers, insère un nouveau nombre en 2ème position avec insert(), puis affiche la somme de tous les éléments.`,hint:`.insert(1, valeur) place la valeur à l’index 1, en décalant les autres vers la droite.`},next:null},{id:7,slug:`ensembles`,title:`Les Ensembles (Set)`,summary:`Stocker des éléments uniques avec Set, et utiliser les opérations d'ensembles : union, intersection, différence.`,duration:`15 min`,objectives:[`Comprendre la différence entre List et Set`,`Créer un Set et y ajouter ou retirer des éléments`,`Vérifier si un élément appartient à un Set`,`Utiliser les opérations d'ensembles : union, intersection, différence`,`Convertir une liste en Set (et inversement) pour éliminer les doublons`],sections:[{id:`quest-ce-quun-set`,heading:`Qu'est-ce qu'un Set ?`,content:`Un **Set** est une collection, comme une liste, mais avec deux différences
+}`,keyPoints:[`List<Type> stocke plusieurs valeurs du même type, dans un ordre précis.`,`Le premier élément est à l’index 0 ; .length donne le nombre d’éléments.`,`.add() ajoute à la fin, .insert(index, valeur) insère à une position précise.`,`.remove()/.removeAt()/.removeLast()/.clear() retirent un ou tous les éléments.`,`for-in et .forEach() parcourent tous les éléments ; ...liste combine des listes.`,`indexOf, sort, reversed, sublist et join complètent la boîte à outils des listes.`],exercisePreview:{prompt:`Crée une liste de 5 nombres entiers, insère un nouveau nombre en 2ème position avec insert(), puis affiche la somme de tous les éléments.`,hint:`.insert(1, valeur) place la valeur à l’index 1, en décalant les autres vers la droite.`},next:`ensembles`},{id:7,slug:`ensembles`,title:`Les Ensembles (Set)`,summary:`Stocker des éléments uniques avec Set, et utiliser les opérations d'ensembles : union, intersection, différence.`,duration:`15 min`,objectives:[`Comprendre la différence entre List et Set`,`Créer un Set et y ajouter ou retirer des éléments`,`Vérifier si un élément appartient à un Set`,`Utiliser les opérations d'ensembles : union, intersection, différence`,`Convertir une liste en Set (et inversement) pour éliminer les doublons`],sections:[{id:`quest-ce-quun-set`,heading:`Qu'est-ce qu'un Set ?`,content:`Un **Set** est une collection, comme une liste, mais avec deux différences
 importantes :
 
 - Un Set ne peut contenir **aucun doublon** : chaque élément n'y apparaît
@@ -426,7 +426,7 @@ print(listeSansDoublons);         // [12, 15, 9, 18]`}],codeExample:`void main()
   print('Union : \${fruitsAyoub.union(fruitsSara)}');
   print('Communs : \${fruitsAyoub.intersection(fruitsSara)}');
   print('Seulement Ayoub : \${fruitsAyoub.difference(fruitsSara)}');
-}`,keyPoints:[`Un Set ne contient aucun doublon et n'a pas d'ordre garanti (pas d'accès par index).`,`Un Set s'écrit avec des accolades { } ; Set<Type> vide = {}; pour un Set vide bien typé.`,`.add() ignore silencieusement une valeur déjà présente ; .remove() retire un élément.`,`.union(), .intersection() et .difference() combinent deux Sets comme en mathématiques.`,`.toSet() sur une liste élimine les doublons ; .toList() reconvertit un Set en liste.`],exercisePreview:{prompt:`Crée deux Sets de String représentant les langues parlées par deux personnes, puis affiche les langues qu'elles ont en commun avec intersection().`,hint:`set1.intersection(set2) renvoie un nouveau Set contenant uniquement les éléments présents dans les deux.`},next:null},{id:8,slug:`dictionnaires`,title:`Les Dictionnaires (Map)`,summary:`Associer des clés à des valeurs avec Map, et apprendre à les créer, modifier et parcourir.`,duration:`18 min`,objectives:[`Comprendre à quoi sert une Map (paires clé/valeur)`,`Créer une Map et déclarer son type avec Map<TypeClé, TypeValeur>`,`Lire, ajouter et modifier une valeur à partir de sa clé`,`Vérifier la présence d’une clé et retirer une entrée`,`Parcourir une Map avec keys, values et entries`],sections:[{id:`quest-ce-quune-map`,heading:`Qu'est-ce qu'une Map ?`,content:"Une **Map** (dictionnaire) associe chaque **clé** à une **valeur** — un\npeu comme un vrai dictionnaire associe un mot à sa définition. Contrairement\nà une liste où on accède par un index numérique (`0`, `1`, `2`...), dans\nune Map on accède directement par la clé de son choix.\n\nChaque clé n'apparaît **qu'une seule fois** dans la Map (comme dans un Set).",code:`Map<String, int> ages = {
+}`,keyPoints:[`Un Set ne contient aucun doublon et n'a pas d'ordre garanti (pas d'accès par index).`,`Un Set s'écrit avec des accolades { } ; Set<Type> vide = {}; pour un Set vide bien typé.`,`.add() ignore silencieusement une valeur déjà présente ; .remove() retire un élément.`,`.union(), .intersection() et .difference() combinent deux Sets comme en mathématiques.`,`.toSet() sur une liste élimine les doublons ; .toList() reconvertit un Set en liste.`],exercisePreview:{prompt:`Crée deux Sets de String représentant les langues parlées par deux personnes, puis affiche les langues qu'elles ont en commun avec intersection().`,hint:`set1.intersection(set2) renvoie un nouveau Set contenant uniquement les éléments présents dans les deux.`},next:`dictionnaires`},{id:8,slug:`dictionnaires`,title:`Les Dictionnaires (Map)`,summary:`Associer des clés à des valeurs avec Map, et apprendre à les créer, modifier et parcourir.`,duration:`18 min`,objectives:[`Comprendre à quoi sert une Map (paires clé/valeur)`,`Créer une Map et déclarer son type avec Map<TypeClé, TypeValeur>`,`Lire, ajouter et modifier une valeur à partir de sa clé`,`Vérifier la présence d’une clé et retirer une entrée`,`Parcourir une Map avec keys, values et entries`],sections:[{id:`quest-ce-quune-map`,heading:`Qu'est-ce qu'une Map ?`,content:"Une **Map** (dictionnaire) associe chaque **clé** à une **valeur** — un\npeu comme un vrai dictionnaire associe un mot à sa définition. Contrairement\nà une liste où on accède par un index numérique (`0`, `1`, `2`...), dans\nune Map on accède directement par la clé de son choix.\n\nChaque clé n'apparaît **qu'une seule fois** dans la Map (comme dans un Set).",code:`Map<String, int> ages = {
   'Ayoub': 25,
   'Sara': 22,
   'Karim': 30,
@@ -479,7 +479,7 @@ for (var entree in ages.entries) {
   stock.forEach((fruit, quantite) {
     print('$fruit : $quantite');
   });
-}`,keyPoints:[`Une Map associe des clés uniques à des valeurs : Map<TypeClé, TypeValeur>.`,`map[clé] lit ou modifie une valeur ; si la clé n'existe pas, l'affectation la crée.`,`Lire une clé absente renvoie null ; .containsKey() permet de vérifier avant.`,`.remove(clé) retire une paire ; .keys, .values et .entries permettent de parcourir la Map.`],exercisePreview:{prompt:`Crée une Map<String, int> associant des prénoms à des âges, puis affiche chaque paire avec forEach sous la forme 'prénom a X ans'.`,hint:`map.forEach((cle, valeur) => print(...)); donne accès à la clé et à la valeur en même temps.`},next:null},{id:9,slug:`iteration-avancee`,title:`Méthodes d'itération avancées`,summary:`Transformer, filtrer et combiner des listes sans boucle explicite : map, where, reduce, fold, any, every.`,duration:`20 min`,objectives:[`Transformer chaque élément d'une liste avec map()`,`Filtrer une liste avec where()`,`Combiner tous les éléments en une seule valeur avec reduce() et fold()`,`Tester une condition sur les éléments avec any() et every()`],sections:[{id:`pourquoi-ces-methodes`,heading:`Pourquoi ces méthodes ?`,content:"Jusqu'ici, pour transformer ou filtrer une liste, on écrivait une boucle\nfor-in avec une liste vide qu'on remplissait au fur et à mesure. Dart\npropose des méthodes toutes faites qui font la même chose en une seule\nligne, sans variable intermédiaire : `map`, `where`, `reduce`, `fold`,\n`any` et `every`. Le code devient plus court et plus lisible une fois\nqu'on est habitué.",code:`List<int> numbers = [1, 2, 3, 4, 5];
+}`,keyPoints:[`Une Map associe des clés uniques à des valeurs : Map<TypeClé, TypeValeur>.`,`map[clé] lit ou modifie une valeur ; si la clé n'existe pas, l'affectation la crée.`,`Lire une clé absente renvoie null ; .containsKey() permet de vérifier avant.`,`.remove(clé) retire une paire ; .keys, .values et .entries permettent de parcourir la Map.`],exercisePreview:{prompt:`Crée une Map<String, int> associant des prénoms à des âges, puis affiche chaque paire avec forEach sous la forme 'prénom a X ans'.`,hint:`map.forEach((cle, valeur) => print(...)); donne accès à la clé et à la valeur en même temps.`},next:`iteration-avancee`},{id:9,slug:`iteration-avancee`,title:`Méthodes d'itération avancées`,summary:`Transformer, filtrer et combiner des listes sans boucle explicite : map, where, reduce, fold, any, every.`,duration:`20 min`,objectives:[`Transformer chaque élément d'une liste avec map()`,`Filtrer une liste avec where()`,`Combiner tous les éléments en une seule valeur avec reduce() et fold()`,`Tester une condition sur les éléments avec any() et every()`],sections:[{id:`pourquoi-ces-methodes`,heading:`Pourquoi ces méthodes ?`,content:"Jusqu'ici, pour transformer ou filtrer une liste, on écrivait une boucle\nfor-in avec une liste vide qu'on remplissait au fur et à mesure. Dart\npropose des méthodes toutes faites qui font la même chose en une seule\nligne, sans variable intermédiaire : `map`, `where`, `reduce`, `fold`,\n`any` et `every`. Le code devient plus court et plus lisible une fois\nqu'on est habitué.",code:`List<int> numbers = [1, 2, 3, 4, 5];
 
 // Avec une boucle classique
 List<int> doubled = [];
@@ -533,7 +533,107 @@ print(allAdults);  // false : 15 n'est pas majeur`}],codeExample:`void main() {
 
   print('Notes retenues : $passingScores');
   print('Moyenne : $average');
-}`,keyPoints:[`.map() transforme chaque élément et renvoie une nouvelle collection (penser à .toList()).`,`.where() garde uniquement les éléments qui vérifient une condition.`,`.reduce() combine tous les éléments en une valeur, mais échoue sur une liste vide.`,`.fold() fait pareil que reduce(), avec une valeur de départ, même sur une liste vide.`,`.any() teste si au moins un élément vérifie une condition ; .every() teste si tous la vérifient.`],exercisePreview:{prompt:`À partir d'une liste de nombres entiers, utilise where() pour garder les nombres pairs, puis fold() pour calculer leur somme.`,hint:`numbers.where((n) => n % 2 == 0).toList() puis .fold(0, (acc, current) => acc + current) sur le résultat.`},next:null}];function or(e){return ar.find(t=>t.slug===e)}function sr({lesson:e}){return(0,j.jsxs)(Pn,{to:`/lecons/${e.slug}`,className:`lesson-card`,children:[(0,j.jsx)(`span`,{className:`lesson-card__number`,children:String(e.id).padStart(2,`0`)}),(0,j.jsxs)(`div`,{children:[(0,j.jsx)(`h3`,{className:`lesson-card__title`,children:e.title}),(0,j.jsx)(`p`,{className:`lesson-card__summary`,children:e.summary})]})]})}function cr(){return(0,j.jsxs)(`section`,{className:`container`,style:{padding:`48px 24px 80px`},children:[(0,j.jsx)(`h1`,{children:`Les leçons`}),(0,j.jsx)(`p`,{style:{color:`var(--ink-soft)`,maxWidth:`60ch`,marginBottom:32},children:`Chaque leçon se lit en quelques minutes et se termine par un exemple à tester.`}),(0,j.jsx)(`div`,{style:{display:`grid`,gap:16},children:ar.map(e=>(0,j.jsx)(sr,{lesson:e},e.id))})]})}var lr=[{id:`ex-1-1`,lessonSlug:`introduction`,title:`Ton prénom à l’écran`,difficulty:`facile`,statement:`Modifie le programme pour qu'il affiche ton prénom au lieu de 'Dart'.`,starterCode:`void main() {
+}`,keyPoints:[`.map() transforme chaque élément et renvoie une nouvelle collection (penser à .toList()).`,`.where() garde uniquement les éléments qui vérifient une condition.`,`.reduce() combine tous les éléments en une valeur, mais échoue sur une liste vide.`,`.fold() fait pareil que reduce(), avec une valeur de départ, même sur une liste vide.`,`.any() teste si au moins un élément vérifie une condition ; .every() teste si tous la vérifient.`],exercisePreview:{prompt:`À partir d'une liste de nombres entiers, utilise where() pour garder les nombres pairs, puis fold() pour calculer leur somme.`,hint:`numbers.where((n) => n % 2 == 0).toList() puis .fold(0, (acc, current) => acc + current) sur le résultat.`},next:`poo-classes`},{id:10,slug:`poo-classes`,title:`La Programmation Orientée Objet : Classes et Objets`,summary:`Définir une classe, comprendre attributs et méthodes, et créer des objets par instanciation.`,duration:`20 min`,objectives:[`Comprendre ce qu'est une classe et un objet`,`Définir une classe avec des attributs`,`Écrire un constructeur, avec la syntaxe raccourcie this.`,`Instancier des objets à partir d’une classe`,`Ajouter des méthodes qui décrivent le comportement des objets`],sections:[{id:`quest-ce-quune-classe`,heading:`Qu'est-ce qu'une classe ?`,content:`Jusqu'ici, on a manipulé des données séparées (une String, un int, une
+Map...). Une **classe** permet de regrouper plusieurs informations liées
+sous un seul modèle réutilisable — un peu comme un plan de construction.
+
+Un **objet** est une instance concrète de ce plan. Par exemple, la classe
+\`Product\` décrit ce qu'est un produit en général (il a un nom, un prix...) ;
+chaque objet créé à partir d'elle représente **un** produit précis.
+
+C'est exactement le principe utilisé par les widgets Flutter : \`Text\`,
+\`Container\`, \`Column\` sont tous des classes.`,code:`// Le plan (la classe)
+class Product {
+  String name;
+  double price;
+}
+
+// Deux objets concrets, construits à partir du même plan
+// (on verra la syntaxe complète juste après)`},{id:`definir-une-classe`,heading:`Définir une classe`,content:"Une classe se déclare avec le mot-clé `class`, suivi d'un nom (par\nconvention, en **PascalCase** : `Product`, `UserProfile`...). À l'intérieur,\non déclare les **attributs** : les variables qui décrivent l'état d'un objet.",code:`class Product {
+  String name;
+  double price;
+  bool inStock;
+}`},{id:`le-constructeur`,heading:`Le constructeur`,content:`Le **constructeur** est une méthode spéciale, appelée automatiquement
+quand on crée un objet, qui sert à initialiser ses attributs. Il porte le
+même nom que la classe.
+
+Dart propose une syntaxe raccourcie très pratique : \`this.name\` directement
+dans les paramètres du constructeur assigne automatiquement la valeur reçue
+à l'attribut correspondant, sans avoir à écrire le corps du constructeur.`,code:`class Product {
+  String name;
+  double price;
+  bool inStock;
+
+  // Constructeur avec la syntaxe raccourcie this.
+  Product(this.name, this.price, this.inStock);
+}
+
+// Équivalent, en version longue (à éviter, plus verbeux) :
+// Product(String name, double price, bool inStock) {
+//   this.name = name;
+//   this.price = price;
+//   this.inStock = inStock;
+// }`},{id:`instancier-un-objet`,heading:`Instancier un objet`,content:`**Instancier** signifie créer un objet concret à partir d'une classe, en
+appelant son constructeur avec le mot-clé \`new\` (optionnel en Dart moderne,
+souvent omis). Chaque objet créé possède ses propres valeurs, indépendantes
+des autres.`,code:`class Product {
+  String name;
+  double price;
+  bool inStock;
+
+  Product(this.name, this.price, this.inStock);
+}
+
+void main() {
+  Product headphones = Product('Casque audio', 250, true);
+  Product keyboard = Product('Clavier mécanique', 400, false);
+
+  print(headphones.name);    // Casque audio
+  print(keyboard.price);     // 400.0
+}`},{id:`les-methodes`,heading:`Les méthodes`,content:`Une **méthode** est une fonction déclarée à l'intérieur d'une classe,
+qui décrit un comportement de l'objet. Elle peut accéder directement aux
+attributs de l'objet sans les recevoir en paramètre — grâce au mot-clé
+\`this\`, qui désigne « l'objet actuel ».`,code:`class Product {
+  String name;
+  double price;
+  bool inStock;
+
+  Product(this.name, this.price, this.inStock);
+
+  // Méthode qui décrit un comportement
+  void applyDiscount(double percentage) {
+    this.price = this.price - (this.price * percentage / 100);
+  }
+
+  String describe() {
+    return '$name coûte $price DH';
+  }
+}
+
+void main() {
+  Product headphones = Product('Casque audio', 250, true);
+
+  headphones.applyDiscount(10);
+  print(headphones.describe());   // Casque audio coûte 225.0 DH
+}`}],codeExample:`class Product {
+  String name;
+  double price;
+  bool inStock;
+
+  Product(this.name, this.price, this.inStock);
+
+  String describe() {
+    return '$name : $price DH';
+  }
+}
+
+void main() {
+  Product headphones = Product('Casque audio', 250, true);
+  Product keyboard = Product('Clavier mécanique', 400, true);
+
+  print(headphones.describe());
+  print(keyboard.describe());
+}`,keyPoints:[`Une classe est un plan/modèle ; un objet est une instance concrète créée à partir de ce plan.`,`Les attributs décrivent l’état d’un objet ; les méthodes décrivent son comportement.`,`Le constructeur porte le nom de la classe ; this.attribut assigne directement le paramètre reçu.`,`Chaque objet instancié a ses propres valeurs, indépendantes des autres objets de la même classe.`,`this, à l’intérieur d’une méthode, désigne l’objet sur lequel la méthode a été appelée.`],exercisePreview:{prompt:`Crée une classe TodoItem avec les attributs title (String) et done (bool), un constructeur avec this., puis instancie deux tâches et affiche leur titre.`,hint:`class TodoItem { String title; bool done; TodoItem(this.title, this.done); }`},next:null}];function or(e){return ar.find(t=>t.slug===e)}function sr({lesson:e}){return(0,j.jsxs)(Pn,{to:`/lecons/${e.slug}`,className:`lesson-card`,children:[(0,j.jsx)(`span`,{className:`lesson-card__number`,children:String(e.id).padStart(2,`0`)}),(0,j.jsxs)(`div`,{children:[(0,j.jsx)(`h3`,{className:`lesson-card__title`,children:e.title}),(0,j.jsx)(`p`,{className:`lesson-card__summary`,children:e.summary})]})]})}function cr(){return(0,j.jsxs)(`section`,{className:`container`,style:{padding:`48px 24px 80px`},children:[(0,j.jsx)(`h1`,{children:`Les leçons`}),(0,j.jsx)(`p`,{style:{color:`var(--ink-soft)`,maxWidth:`60ch`,marginBottom:32},children:`Chaque leçon se lit en quelques minutes et se termine par un exemple à tester.`}),(0,j.jsx)(`div`,{style:{display:`grid`,gap:16},children:ar.map(e=>(0,j.jsx)(sr,{lesson:e},e.id))})]})}var lr=[{id:`ex-1-1`,lessonSlug:`introduction`,title:`Ton prénom à l’écran`,difficulty:`facile`,statement:`Modifie le programme pour qu'il affiche ton prénom au lieu de 'Dart'.`,starterCode:`void main() {
   print('Bonjour, Dart !');
 }`,solutionCode:`void main() {
   print('Bonjour, Ayoub !');
@@ -1280,5 +1380,363 @@ void main() {
   // Vérifie si au moins un âge est mineur
   bool hasMinor = ages.any((age) => age < 18);
   print(hasMinor);    // true
-}`,hint:`every() = tous vérifient la condition ; any() = au moins un la vérifie.`}],vr=[...lr,...ur,...dr,...fr,...pr,...mr,...hr,...gr,..._r];function yr(e){return vr.filter(t=>t.lessonSlug===e)}function br({code:e,filename:t}){return(0,j.jsxs)(`div`,{className:`code-block`,children:[t&&(0,j.jsx)(`span`,{className:`code-block__filename`,children:t}),(0,j.jsx)(`pre`,{children:(0,j.jsx)(`code`,{children:e})})]})}function xr(e){return e.split(/(\*\*[^*]+\*\*|`[^`]+`)/g).filter(Boolean).map((e,t)=>e.startsWith(`**`)&&e.endsWith(`**`)?(0,j.jsx)(`strong`,{children:e.slice(2,-2)},t):e.startsWith("`")&&e.endsWith("`")?(0,j.jsx)(`code`,{style:{background:`var(--paper-alt)`,padding:`1px 5px`,borderRadius:4},children:e.slice(1,-1)},t):e)}function Sr(e){return e.trim().split(/\n\n+/).map((e,t)=>{let n=e.split(`
-`).filter(Boolean),r=n.every(e=>e.trim().startsWith(`- `)),i=n.every(e=>/^\d+\.\s/.test(e.trim()));return r?(0,j.jsx)(`ul`,{style:{margin:`0 0 1em`,paddingLeft:`1.3em`},children:n.map((e,t)=>(0,j.jsx)(`li`,{children:xr(e.trim().replace(/^- /,``))},t))},t):i?(0,j.jsx)(`ol`,{style:{margin:`0 0 1em`,paddingLeft:`1.3em`},children:n.map((e,t)=>(0,j.jsx)(`li`,{children:xr(e.trim().replace(/^\d+\.\s/,``))},t))},t):(0,j.jsx)(`p`,{children:xr(e)},t)})}function Cr({section:e}){return(0,j.jsxs)(`div`,{style:{marginBottom:36},children:[(0,j.jsx)(`h2`,{style:{fontSize:`1.6rem`},children:e.heading}),Sr(e.content),e.code&&(0,j.jsx)(br,{code:e.code})]})}function wr(){let{slug:e}=vt(),t=or(e);if(!t)return(0,j.jsxs)(`section`,{className:`container`,style:{padding:`48px 24px`},children:[(0,j.jsx)(`h1`,{children:`Leçon introuvable`}),(0,j.jsx)(`p`,{children:`Cette leçon n'existe pas ou plus.`}),(0,j.jsx)(Pn,{to:`/lecons`,children:`Retour aux leçons`})]});let n=t.next?or(t.next):null,r=yr(t.slug);return(0,j.jsxs)(`section`,{className:`container`,style:{padding:`48px 24px 80px`,maxWidth:760},children:[(0,j.jsx)(Pn,{to:`/lecons`,style:{fontFamily:`var(--font-display)`,fontSize:`1.1rem`},children:`← Toutes les leçons`}),(0,j.jsxs)(`div`,{style:{marginTop:16,marginBottom:8,display:`flex`,gap:12,alignItems:`baseline`},children:[(0,j.jsx)(`h1`,{style:{margin:0},children:t.title}),t.duration&&(0,j.jsxs)(`span`,{style:{fontFamily:`var(--font-display)`,fontSize:`1.2rem`,color:`var(--accent-coral)`},children:[`· `,t.duration]})]}),(0,j.jsx)(`p`,{style:{color:`var(--ink-soft)`,maxWidth:`60ch`},children:t.summary}),t.objectives?.length>0&&(0,j.jsxs)(`div`,{style:{background:`var(--paper-alt)`,borderRadius:`var(--radius-md)`,padding:`20px 24px`,margin:`28px 0`},children:[(0,j.jsx)(`h3`,{style:{marginTop:0,fontSize:`1.3rem`},children:`Ce que tu vas savoir faire`}),(0,j.jsx)(`ul`,{style:{margin:0,paddingLeft:`1.2em`},children:t.objectives.map((e,t)=>(0,j.jsx)(`li`,{children:e},t))})]}),t.sections?.length>0&&t.sections.map(e=>(0,j.jsx)(Cr,{section:e},e.id)),t.keyPoints?.length>0&&(0,j.jsxs)(`div`,{style:{borderLeft:`4px solid var(--dart-blue)`,paddingLeft:20,margin:`36px 0`},children:[(0,j.jsx)(`h3`,{style:{fontSize:`1.3rem`},children:`À retenir`}),(0,j.jsx)(`ul`,{style:{margin:0,paddingLeft:`1.2em`},children:t.keyPoints.map((e,t)=>(0,j.jsx)(`li`,{children:e},t))})]}),t.exercisePreview&&(0,j.jsxs)(`div`,{style:{background:`var(--paper-alt)`,border:`2px dashed var(--accent-coral)`,borderRadius:`var(--radius-md)`,padding:`20px 24px`,margin:`28px 0`},children:[(0,j.jsx)(`h3`,{style:{marginTop:0,fontSize:`1.3rem`},children:`✎ À toi de jouer`}),(0,j.jsx)(`p`,{style:{marginBottom:8},children:t.exercisePreview.prompt}),t.exercisePreview.hint&&(0,j.jsxs)(`p`,{style:{margin:0,fontSize:`0.9rem`,color:`var(--ink-soft)`},children:[`Indice : `,t.exercisePreview.hint]})]}),r.length>0&&(0,j.jsxs)(`div`,{style:{background:`var(--paper-alt)`,border:`2px dashed var(--dart-blue)`,borderRadius:`var(--radius-md)`,padding:`20px 24px`,margin:`28px 0`},children:[(0,j.jsx)(`h3`,{style:{marginTop:0,fontSize:`1.3rem`},children:`✎ Exercices de cette leçon`}),(0,j.jsx)(`ul`,{style:{margin:0,paddingLeft:`1.2em`},children:r.map(e=>(0,j.jsx)(`li`,{style:{marginBottom:4},children:(0,j.jsx)(Pn,{to:`/exercices/${t.slug}#${e.id}`,children:e.title})},e.id))})]}),n&&(0,j.jsx)(`div`,{style:{marginTop:48,textAlign:`right`},children:(0,j.jsxs)(Pn,{to:`/lecons/${n.slug}`,className:`btn btn--primary`,style:{textDecoration:`none`},children:[`Leçon suivante : `,n.title,` →`]})})]})}function Tr(){let e=ar.map(e=>({lesson:e,count:yr(e.slug).length})).filter(e=>e.count>0);return(0,j.jsxs)(`section`,{className:`container`,style:{padding:`48px 24px 80px`,maxWidth:760},children:[(0,j.jsx)(`h1`,{children:`Exercices`}),(0,j.jsx)(`p`,{style:{color:`var(--ink-soft)`,maxWidth:`60ch`,marginBottom:32},children:`Choisis une leçon pour voir ses exercices.`}),e.length===0&&(0,j.jsx)(`p`,{style:{color:`var(--ink-soft)`},children:`Aucun exercice disponible pour le moment.`}),(0,j.jsx)(`div`,{style:{display:`grid`,gap:16},children:e.map(({lesson:e,count:t})=>(0,j.jsxs)(Pn,{to:`/exercices/${e.slug}`,className:`exercise-lesson-card`,children:[(0,j.jsx)(`span`,{className:`exercise-lesson-card__number`,children:String(e.id).padStart(2,`0`)}),(0,j.jsxs)(`div`,{children:[(0,j.jsx)(`h3`,{className:`exercise-lesson-card__title`,children:e.title}),(0,j.jsxs)(`p`,{className:`exercise-lesson-card__count`,children:[t,` exercice`,t>1?`s`:``]})]})]},e.slug))})]})}var Er={facile:{text:`Facile`,color:`var(--success)`},moyen:{text:`Moyen`,color:`var(--accent-coral)`},difficile:{text:`Difficile`,color:`#B33F3F`}};function Dr({exercise:e,index:t}){let[n,r]=(0,x.useState)(!1),i=Er[e.difficulty]??Er.facile;return(0,j.jsxs)(`div`,{className:`exercise-card`,id:e.id,children:[(0,j.jsxs)(`div`,{className:`exercise-card__header`,children:[(0,j.jsxs)(`span`,{className:`exercise-card__number`,children:[`Exercice `,t+1]}),(0,j.jsx)(`span`,{className:`exercise-card__difficulty`,style:{color:i.color},children:i.text})]}),(0,j.jsx)(`h3`,{className:`exercise-card__title`,children:e.title}),(0,j.jsx)(`p`,{className:`exercise-card__statement`,children:e.statement}),e.starterCode&&(0,j.jsx)(br,{code:e.starterCode,filename:`à compléter`}),e.hint&&(0,j.jsxs)(`details`,{className:`exercise-card__hint`,children:[(0,j.jsx)(`summary`,{children:`Un indice ?`}),(0,j.jsx)(`p`,{children:e.hint})]}),(0,j.jsx)(`button`,{type:`button`,className:`exercise-card__toggle`,onClick:()=>r(e=>!e),"aria-expanded":n,children:n?`Masquer la correction`:`Voir la correction`}),n&&(0,j.jsx)(br,{code:e.solutionCode,filename:`correction`})]})}function Or(){let{slug:e}=vt(),t=or(e),n=yr(e);return t?(0,j.jsxs)(`section`,{className:`container`,style:{padding:`48px 24px 80px`,maxWidth:760},children:[(0,j.jsx)(Pn,{to:`/exercices`,style:{fontFamily:`var(--font-display)`,fontSize:`1.1rem`},children:`← Toutes les leçons`}),(0,j.jsx)(`div`,{style:{display:`flex`,alignItems:`baseline`,gap:12,marginTop:16,marginBottom:8},children:(0,j.jsx)(`h1`,{style:{margin:0},children:t.title})}),(0,j.jsx)(Pn,{to:`/lecons/${t.slug}`,style:{fontFamily:`var(--font-display)`,fontSize:`1.1rem`},children:`revoir la leçon →`}),n.length===0?(0,j.jsx)(`p`,{style:{color:`var(--ink-soft)`,marginTop:24},children:`Aucun exercice pour cette leçon pour le moment.`}):(0,j.jsx)(`div`,{style:{marginTop:32},children:n.map((e,t)=>(0,j.jsx)(Dr,{exercise:e,index:t},e.id))})]}):(0,j.jsxs)(`section`,{className:`container`,style:{padding:`48px 24px`},children:[(0,j.jsx)(`h1`,{children:`Leçon introuvable`}),(0,j.jsx)(Pn,{to:`/exercices`,children:`← Retour aux exercices`})]})}function kr(){return(0,j.jsxs)(`section`,{className:`container`,style:{padding:`48px 24px 80px`},children:[(0,j.jsx)(`h1`,{children:`À propos`}),(0,j.jsx)(`p`,{style:{color:`var(--ink-soft)`,maxWidth:`60ch`},children:`Le Cahier Dart est un projet pédagogique pour apprendre Dart pas à pas, avec des explications simples et des exemples à tester soi-même.`})]})}function Ar(){return(0,j.jsxs)(`section`,{className:`container`,style:{padding:`80px 24px`,textAlign:`center`},children:[(0,j.jsx)(`h1`,{children:`Page arrachée du cahier`}),(0,j.jsx)(`p`,{style:{color:`var(--ink-soft)`},children:`Cette page n'existe pas.`}),(0,j.jsx)(Pn,{to:`/`,style:{fontFamily:`var(--font-display)`,fontSize:`1.3rem`},children:`← Retour à l'accueil`})]})}function jr(){return(0,j.jsx)(rr,{children:(0,j.jsxs)(Wt,{children:[(0,j.jsx)(Ht,{path:`/`,element:(0,j.jsx)(ir,{})}),(0,j.jsx)(Ht,{path:`/lecons`,element:(0,j.jsx)(cr,{})}),(0,j.jsx)(Ht,{path:`/lecons/:slug`,element:(0,j.jsx)(wr,{})}),(0,j.jsx)(Ht,{path:`/exercices`,element:(0,j.jsx)(Tr,{})}),(0,j.jsx)(Ht,{path:`/exercices/:slug`,element:(0,j.jsx)(Or,{})}),(0,j.jsx)(Ht,{path:`/a-propos`,element:(0,j.jsx)(kr,{})}),(0,j.jsx)(Ht,{path:`*`,element:(0,j.jsx)(Ar,{})})]})})}Qn.createRoot(document.getElementById(`root`)).render((0,j.jsx)(x.StrictMode,{children:(0,j.jsx)(Mn,{basename:`/learn-dart/`,children:(0,j.jsx)(jr,{})})}));
+}`,hint:`every() = tous vérifient la condition ; any() = au moins un la vérifie.`},{id:`ex-9-7`,lessonSlug:`iteration-avancee`,title:`Liste de produits : les noms affichés`,difficulty:`facile`,statement:`Une app e-commerce reçoit une liste de produits sous forme de List<Map<String, dynamic>>. Utilise map() pour extraire uniquement les noms des produits, prêts à être affichés dans une liste déroulante (ListView).`,starterCode:`void main() {
+  List<Map<String, dynamic>> products = [
+    {'name': 'Casque audio', 'price': 250},
+    {'name': 'Clavier mécanique', 'price': 400},
+    {'name': 'Souris sans fil', 'price': 120},
+  ];
+
+  // À compléter
+}`,solutionCode:`void main() {
+  List<Map<String, dynamic>> products = [
+    {'name': 'Casque audio', 'price': 250},
+    {'name': 'Clavier mécanique', 'price': 400},
+    {'name': 'Souris sans fil', 'price': 120},
+  ];
+
+  // Extrait uniquement le champ 'name' de chaque produit
+  List<String> productNames = products.map((product) => product['name'] as String).toList();
+
+  print(productNames);   // [Casque audio, Clavier mécanique, Souris sans fil]
+}`,hint:`product['name'] accède au champ name de la Map ; as String précise le type attendu pour Dart.`},{id:`ex-9-8`,lessonSlug:`iteration-avancee`,title:`Panier : les articles en stock`,difficulty:`facile`,statement:`Une liste de produits contient un champ inStock (bool). Utilise where() pour ne garder que les produits disponibles, comme le ferait un écran de boutique qui masque les articles en rupture.`,starterCode:`void main() {
+  List<Map<String, dynamic>> products = [
+    {'name': 'Casque audio', 'inStock': true},
+    {'name': 'Clavier mécanique', 'inStock': false},
+    {'name': 'Souris sans fil', 'inStock': true},
+  ];
+
+  // À compléter
+}`,solutionCode:`void main() {
+  List<Map<String, dynamic>> products = [
+    {'name': 'Casque audio', 'inStock': true},
+    {'name': 'Clavier mécanique', 'inStock': false},
+    {'name': 'Souris sans fil', 'inStock': true},
+  ];
+
+  // Garde uniquement les produits disponibles
+  List<Map<String, dynamic>> availableProducts =
+      products.where((product) => product['inStock'] == true).toList();
+
+  print(availableProducts.map((product) => product['name']).toList());
+  // [Casque audio, Souris sans fil]
+}`,hint:`product['inStock'] == true garde uniquement les produits dont ce champ vaut true.`},{id:`ex-9-9`,lessonSlug:`iteration-avancee`,title:`Panier : le total à payer`,difficulty:`moyen`,statement:`Un panier contient une liste d'articles avec un prix (price) et une quantité (quantity). Calcule le total à payer avec fold(), comme sur l'écran de checkout d'une app d'achat.`,starterCode:`void main() {
+  List<Map<String, dynamic>> cart = [
+    {'name': 'T-shirt', 'price': 90, 'quantity': 2},
+    {'name': 'Casquette', 'price': 60, 'quantity': 1},
+    {'name': 'Chaussettes', 'price': 25, 'quantity': 3},
+  ];
+
+  // À compléter
+}`,solutionCode:`void main() {
+  List<Map<String, dynamic>> cart = [
+    {'name': 'T-shirt', 'price': 90, 'quantity': 2},
+    {'name': 'Casquette', 'price': 60, 'quantity': 1},
+    {'name': 'Chaussettes', 'price': 25, 'quantity': 3},
+  ];
+
+  // Additionne (prix x quantité) pour chaque article
+  int total = cart.fold(0, (accumulator, item) => accumulator + (item['price'] as int) * (item['quantity'] as int));
+
+  print(total);   // 315
+}`,hint:`Dans le fold, calcule item['price'] * item['quantity'] pour chaque article avant de l’additionner.`},{id:`ex-9-10`,lessonSlug:`iteration-avancee`,title:`Todo list : les tâches restantes`,difficulty:`facile`,statement:`Une liste de tâches (todos) a un champ done (bool). Utilise where() pour compter combien de tâches ne sont pas encore terminées, comme le badge d'une app de todo list.`,starterCode:`void main() {
+  List<Map<String, dynamic>> todos = [
+    {'title': 'Réviser Dart', 'done': true},
+    {'title': 'Préparer le TP', 'done': false},
+    {'title': 'Corriger les copies', 'done': false},
+  ];
+
+  // À compléter
+}`,solutionCode:`void main() {
+  List<Map<String, dynamic>> todos = [
+    {'title': 'Réviser Dart', 'done': true},
+    {'title': 'Préparer le TP', 'done': false},
+    {'title': 'Corriger les copies', 'done': false},
+  ];
+
+  // Garde uniquement les tâches non terminées, puis compte-les
+  int remainingCount = todos.where((todo) => todo['done'] == false).length;
+
+  print(remainingCount);   // 2
+}`,hint:`where(...).length compte directement le nombre d’éléments filtrés, sans .toList().`},{id:`ex-9-11`,lessonSlug:`iteration-avancee`,title:`Formulaire : tous les champs sont-ils remplis ?`,difficulty:`moyen`,statement:`Un formulaire d'inscription a plusieurs champs sous forme de List<String>. Utilise every() pour vérifier qu'aucun champ n'est vide, avant d'activer le bouton 'Valider'.`,starterCode:`void main() {
+  List<String> formFields = ['Ayoub', 'ayoub@email.com', '0600000000'];
+
+  // À compléter
+}`,solutionCode:`void main() {
+  List<String> formFields = ['Ayoub', 'ayoub@email.com', '0600000000'];
+
+  // Vérifie qu'aucun champ n'est vide
+  bool isFormValid = formFields.every((field) => field.isNotEmpty);
+
+  print(isFormValid);   // true : le bouton Valider peut être activé
+}`,hint:`field.isNotEmpty renvoie true si le champ n’est pas une chaîne vide ; every() vérifie que c’est vrai pour tous.`},{id:`ex-9-12`,lessonSlug:`iteration-avancee`,title:`Notifications : y a-t-il du nouveau ?`,difficulty:`moyen`,statement:`Une liste de notifications a un champ read (bool). Utilise any() pour savoir s'il faut afficher un point rouge sur l'icône de notifications (au moins une non lue).`,starterCode:`void main() {
+  List<Map<String, dynamic>> notifications = [
+    {'message': 'Nouveau message', 'read': true},
+    {'message': 'Commande expédiée', 'read': false},
+    {'message': 'Promo du jour', 'read': true},
+  ];
+
+  // À compléter
+}`,solutionCode:`void main() {
+  List<Map<String, dynamic>> notifications = [
+    {'message': 'Nouveau message', 'read': true},
+    {'message': 'Commande expédiée', 'read': false},
+    {'message': 'Promo du jour', 'read': true},
+  ];
+
+  // Vérifie s'il existe au moins une notification non lue
+  bool hasUnread = notifications.any((notification) => notification['read'] == false);
+
+  print(hasUnread);   // true : on affiche le point rouge
+}`,hint:`any((notification) => notification['read'] == false) suffit dès qu’une seule correspond.`},{id:`ex-9-13`,lessonSlug:`iteration-avancee`,title:`Contacts : recherche par nom`,difficulty:`moyen`,statement:`Une liste de contacts contient des noms. Simule une barre de recherche : utilise where() pour ne garder que les contacts dont le nom contient une chaîne saisie par l'utilisateur (insensible à la casse).`,starterCode:`void main() {
+  List<String> contacts = ['Ayoub Amrani', 'Sara Benali', 'Yassine Ayoub'];
+  String query = 'ayoub';
+
+  // À compléter
+}`,solutionCode:`void main() {
+  List<String> contacts = ['Ayoub Amrani', 'Sara Benali', 'Yassine Ayoub'];
+  String query = 'ayoub';
+
+  // Garde les contacts dont le nom contient la recherche, sans tenir compte de la casse
+  List<String> results = contacts
+      .where((contact) => contact.toLowerCase().contains(query.toLowerCase()))
+      .toList();
+
+  print(results);   // [Ayoub Amrani, Yassine Ayoub]
+}`,hint:`toLowerCase() sur les deux côtés avant contains() rend la recherche insensible à la casse.`},{id:`ex-9-14`,lessonSlug:`iteration-avancee`,title:`Utilisateurs : la moyenne des scores`,difficulty:`difficile`,statement:`Une liste d'utilisateurs contient chacun un score. Utilise map() pour extraire les scores, puis fold() pour calculer leur moyenne, comme un écran de classement (leaderboard).`,starterCode:`void main() {
+  List<Map<String, dynamic>> users = [
+    {'username': 'ayoub25', 'score': 82},
+    {'username': 'sara_b', 'score': 91},
+    {'username': 'karim.k', 'score': 76},
+  ];
+
+  // À compléter
+}`,solutionCode:`void main() {
+  List<Map<String, dynamic>> users = [
+    {'username': 'ayoub25', 'score': 82},
+    {'username': 'sara_b', 'score': 91},
+    {'username': 'karim.k', 'score': 76},
+  ];
+
+  // Extrait uniquement les scores, puis calcule leur somme
+  List<int> scores = users.map((user) => user['score'] as int).toList();
+  int total = scores.fold(0, (accumulator, current) => accumulator + current);
+  double average = total / scores.length;
+
+  print(average);   // 83.0
+}`,hint:`Sépare le problème en deux étapes : map() pour extraire les scores, puis fold() pour les additionner.`},{id:`ex-9-15`,lessonSlug:`iteration-avancee`,title:`Panier : appliquer une remise aux articles chers`,difficulty:`difficile`,statement:`Dans un panier, applique une remise de 20% uniquement aux articles dont le prix dépasse 100 DH, grâce à map() combiné à une condition ternaire à l'intérieur. Affiche les nouveaux prix.`,starterCode:`void main() {
+  List<Map<String, dynamic>> cart = [
+    {'name': 'T-shirt', 'price': 90},
+    {'name': 'Veste', 'price': 350},
+    {'name': 'Casquette', 'price': 60},
+    {'name': 'Chaussures', 'price': 420},
+  ];
+
+  // À compléter
+}`,solutionCode:`void main() {
+  List<Map<String, dynamic>> cart = [
+    {'name': 'T-shirt', 'price': 90},
+    {'name': 'Veste', 'price': 350},
+    {'name': 'Casquette', 'price': 60},
+    {'name': 'Chaussures', 'price': 420},
+  ];
+
+  // Applique 20% de remise seulement si le prix dépasse 100 DH
+  List<double> discountedPrices = cart.map((item) {
+    int price = item['price'] as int;
+    return price > 100 ? price * 0.8 : price.toDouble();
+  }).toList();
+
+  print(discountedPrices);   // [90.0, 280.0, 60.0, 336.0]
+}`,hint:`À l’intérieur du map(), tu peux utiliser un bloc { } avec plusieurs lignes, pas seulement une expression courte.`}],vr=[{id:`ex-10-1`,lessonSlug:`poo-classes`,title:`Ta première classe : TodoItem`,difficulty:`facile`,statement:`Crée une classe TodoItem avec deux attributs : title (String) et done (bool). Ajoute un constructeur avec la syntaxe this. Instancie une tâche et affiche son titre.`,starterCode:`class TodoItem {
+  // À compléter
+}
+
+void main() {
+  // Instancie une tâche et affiche son titre
+}`,solutionCode:`class TodoItem {
+  String title;
+  bool done;
+
+  TodoItem(this.title, this.done);
+}
+
+void main() {
+  TodoItem task = TodoItem('Réviser Dart', false);
+
+  print(task.title);   // Réviser Dart
+}`,hint:`Un constructeur avec this.title, this.done assigne automatiquement les paramètres reçus aux attributs.`},{id:`ex-10-2`,lessonSlug:`poo-classes`,title:`Fiche produit`,difficulty:`facile`,statement:`Crée une classe Product avec les attributs name (String), price (double) et inStock (bool). Instancie deux produits différents et affiche leur nom et leur prix.`,starterCode:`class Product {
+  // À compléter
+}
+
+void main() {
+  // Instancie deux produits
+}`,solutionCode:`class Product {
+  String name;
+  double price;
+  bool inStock;
+
+  Product(this.name, this.price, this.inStock);
+}
+
+void main() {
+  Product headphones = Product('Casque audio', 250, true);
+  Product keyboard = Product('Clavier mécanique', 400, false);
+
+  print('\${headphones.name} : \${headphones.price} DH');
+  print('\${keyboard.name} : \${keyboard.price} DH');
+}`,hint:`Chaque instanciation Product(...) crée un objet indépendant avec ses propres valeurs.`},{id:`ex-10-3`,lessonSlug:`poo-classes`,title:`Une méthode sur User`,difficulty:`moyen`,statement:`Crée une classe User avec les attributs firstName et lastName (String). Ajoute une méthode fullName() qui renvoie le prénom et le nom réunis par un espace. Instancie un utilisateur et affiche son nom complet.`,starterCode:`class User {
+  // À compléter
+}
+
+void main() {
+  // Instancie un utilisateur et affiche fullName()
+}`,solutionCode:`class User {
+  String firstName;
+  String lastName;
+
+  User(this.firstName, this.lastName);
+
+  String fullName() {
+    return '$firstName $lastName';
+  }
+}
+
+void main() {
+  User user = User('Ayoub', 'Amrani');
+
+  print(user.fullName());   // Ayoub Amrani
+}`,hint:`Une méthode déclarée dans la classe peut utiliser directement les attributs (firstName, lastName) sans les recevoir en paramètre.`},{id:`ex-10-4`,lessonSlug:`poo-classes`,title:`Article de panier avec remise`,difficulty:`moyen`,statement:`Crée une classe CartItem avec les attributs name (String) et price (double). Ajoute une méthode applyDiscount(double percentage) qui réduit price du pourcentage donné, en modifiant directement l'attribut avec this.`,starterCode:`class CartItem {
+  // À compléter
+}
+
+void main() {
+  CartItem item = CartItem('Veste', 350);
+  item.applyDiscount(20);
+  print(item.price);
+}`,solutionCode:`class CartItem {
+  String name;
+  double price;
+
+  CartItem(this.name, this.price);
+
+  void applyDiscount(double percentage) {
+    this.price = this.price - (this.price * percentage / 100);
+  }
+}
+
+void main() {
+  CartItem item = CartItem('Veste', 350);
+  item.applyDiscount(20);
+  print(item.price);   // 280.0
+}`,hint:`this.price = this.price - (this.price * percentage / 100); modifie directement l’attribut de l’objet.`},{id:`ex-10-5`,lessonSlug:`poo-classes`,title:`Liste de tâches (List<TodoItem>)`,difficulty:`moyen`,statement:`En réutilisant la classe TodoItem (title, done), crée une List<TodoItem> avec 4 tâches. Utilise where() pour compter combien sont encore à faire (done == false).`,starterCode:`class TodoItem {
+  String title;
+  bool done;
+
+  TodoItem(this.title, this.done);
+}
+
+void main() {
+  List<TodoItem> todos = [
+    TodoItem('Réviser Dart', true),
+    TodoItem('Préparer le TP', false),
+    TodoItem('Corriger les copies', false),
+    TodoItem('Répondre aux emails', false),
+  ];
+
+  // À compléter
+}`,solutionCode:`class TodoItem {
+  String title;
+  bool done;
+
+  TodoItem(this.title, this.done);
+}
+
+void main() {
+  List<TodoItem> todos = [
+    TodoItem('Réviser Dart', true),
+    TodoItem('Préparer le TP', false),
+    TodoItem('Corriger les copies', false),
+    TodoItem('Répondre aux emails', false),
+  ];
+
+  int remainingCount = todos.where((todo) => todo.done == false).length;
+
+  print(remainingCount);   // 3
+}`,hint:`Une classe peut être utilisée comme type de liste, exactement comme List<int> ou List<String>.`},{id:`ex-10-6`,lessonSlug:`poo-classes`,title:`Total du panier (List<CartItem>)`,difficulty:`difficile`,statement:`En réutilisant la classe CartItem (name, price), crée une List<CartItem> avec 3 articles. Utilise map() pour extraire les prix, puis fold() pour calculer le total du panier.`,starterCode:`class CartItem {
+  String name;
+  double price;
+
+  CartItem(this.name, this.price);
+}
+
+void main() {
+  List<CartItem> cart = [
+    CartItem('T-shirt', 90),
+    CartItem('Casquette', 60),
+    CartItem('Chaussures', 420),
+  ];
+
+  // À compléter
+}`,solutionCode:`class CartItem {
+  String name;
+  double price;
+
+  CartItem(this.name, this.price);
+}
+
+void main() {
+  List<CartItem> cart = [
+    CartItem('T-shirt', 90),
+    CartItem('Casquette', 60),
+    CartItem('Chaussures', 420),
+  ];
+
+  List<double> prices = cart.map((item) => item.price).toList();
+  double total = prices.fold(0, (accumulator, current) => accumulator + current);
+
+  print(total);   // 570.0
+}`,hint:`map((item) => item.price) extrait le prix de chaque objet ; fold(0, ...) additionne ensuite tous les prix.`},{id:`ex-10-7`,lessonSlug:`poo-classes`,title:`Profil utilisateur avec badge`,difficulty:`difficile`,statement:`Crée une classe User avec les attributs username (String) et score (int). Ajoute une méthode getBadge() qui renvoie 'Or' si score >= 80, 'Argent' si score >= 50, sinon 'Bronze'. Instancie 3 utilisateurs et affiche le badge de chacun.`,starterCode:`class User {
+  // À compléter
+}
+
+void main() {
+  List<User> users = [
+    User('ayoub25', 92),
+    User('sara_b', 65),
+    User('karim.k', 30),
+  ];
+
+  // Affiche le badge de chaque utilisateur
+}`,solutionCode:`class User {
+  String username;
+  int score;
+
+  User(this.username, this.score);
+
+  String getBadge() {
+    if (score >= 80) {
+      return 'Or';
+    } else if (score >= 50) {
+      return 'Argent';
+    } else {
+      return 'Bronze';
+    }
+  }
+}
+
+void main() {
+  List<User> users = [
+    User('ayoub25', 92),
+    User('sara_b', 65),
+    User('karim.k', 30),
+  ];
+
+  for (User user in users) {
+    print('\${user.username} : \${user.getBadge()}');
+  }
+  // ayoub25 : Or
+  // sara_b : Argent
+  // karim.k : Bronze
+}`,hint:`getBadge() peut utiliser directement this.score (ou simplement score) sans le recevoir en paramètre.`}],yr=[...lr,...ur,...dr,...fr,...pr,...mr,...hr,...gr,..._r,...vr];function br(e){return yr.filter(t=>t.lessonSlug===e)}function xr({code:e,filename:t}){return(0,j.jsxs)(`div`,{className:`code-block`,children:[t&&(0,j.jsx)(`span`,{className:`code-block__filename`,children:t}),(0,j.jsx)(`pre`,{children:(0,j.jsx)(`code`,{children:e})})]})}function Sr(e){return e.split(/(\*\*[^*]+\*\*|`[^`]+`)/g).filter(Boolean).map((e,t)=>e.startsWith(`**`)&&e.endsWith(`**`)?(0,j.jsx)(`strong`,{children:e.slice(2,-2)},t):e.startsWith("`")&&e.endsWith("`")?(0,j.jsx)(`code`,{style:{background:`var(--paper-alt)`,padding:`1px 5px`,borderRadius:4},children:e.slice(1,-1)},t):e)}function Cr(e){return e.trim().split(/\n\n+/).map((e,t)=>{let n=e.split(`
+`).filter(Boolean),r=n.every(e=>e.trim().startsWith(`- `)),i=n.every(e=>/^\d+\.\s/.test(e.trim()));return r?(0,j.jsx)(`ul`,{style:{margin:`0 0 1em`,paddingLeft:`1.3em`},children:n.map((e,t)=>(0,j.jsx)(`li`,{children:Sr(e.trim().replace(/^- /,``))},t))},t):i?(0,j.jsx)(`ol`,{style:{margin:`0 0 1em`,paddingLeft:`1.3em`},children:n.map((e,t)=>(0,j.jsx)(`li`,{children:Sr(e.trim().replace(/^\d+\.\s/,``))},t))},t):(0,j.jsx)(`p`,{children:Sr(e)},t)})}function wr({section:e}){return(0,j.jsxs)(`div`,{style:{marginBottom:36},children:[(0,j.jsx)(`h2`,{style:{fontSize:`1.6rem`},children:e.heading}),Cr(e.content),e.code&&(0,j.jsx)(xr,{code:e.code})]})}function Tr(){let{slug:e}=vt(),t=or(e);if(!t)return(0,j.jsxs)(`section`,{className:`container`,style:{padding:`48px 24px`},children:[(0,j.jsx)(`h1`,{children:`Leçon introuvable`}),(0,j.jsx)(`p`,{children:`Cette leçon n'existe pas ou plus.`}),(0,j.jsx)(Pn,{to:`/lecons`,children:`Retour aux leçons`})]});let n=t.next?or(t.next):null,r=br(t.slug);return(0,j.jsxs)(`section`,{className:`container`,style:{padding:`48px 24px 80px`,maxWidth:760},children:[(0,j.jsx)(Pn,{to:`/lecons`,style:{fontFamily:`var(--font-display)`,fontSize:`1.1rem`},children:`← Toutes les leçons`}),(0,j.jsxs)(`div`,{style:{marginTop:16,marginBottom:8,display:`flex`,gap:12,alignItems:`baseline`},children:[(0,j.jsx)(`h1`,{style:{margin:0},children:t.title}),t.duration&&(0,j.jsxs)(`span`,{style:{fontFamily:`var(--font-display)`,fontSize:`1.2rem`,color:`var(--accent-coral)`},children:[`· `,t.duration]})]}),(0,j.jsx)(`p`,{style:{color:`var(--ink-soft)`,maxWidth:`60ch`},children:t.summary}),t.objectives?.length>0&&(0,j.jsxs)(`div`,{style:{background:`var(--paper-alt)`,borderRadius:`var(--radius-md)`,padding:`20px 24px`,margin:`28px 0`},children:[(0,j.jsx)(`h3`,{style:{marginTop:0,fontSize:`1.3rem`},children:`Ce que tu vas savoir faire`}),(0,j.jsx)(`ul`,{style:{margin:0,paddingLeft:`1.2em`},children:t.objectives.map((e,t)=>(0,j.jsx)(`li`,{children:e},t))})]}),t.sections?.length>0&&t.sections.map(e=>(0,j.jsx)(wr,{section:e},e.id)),t.keyPoints?.length>0&&(0,j.jsxs)(`div`,{style:{borderLeft:`4px solid var(--dart-blue)`,paddingLeft:20,margin:`36px 0`},children:[(0,j.jsx)(`h3`,{style:{fontSize:`1.3rem`},children:`À retenir`}),(0,j.jsx)(`ul`,{style:{margin:0,paddingLeft:`1.2em`},children:t.keyPoints.map((e,t)=>(0,j.jsx)(`li`,{children:e},t))})]}),t.exercisePreview&&(0,j.jsxs)(`div`,{style:{background:`var(--paper-alt)`,border:`2px dashed var(--accent-coral)`,borderRadius:`var(--radius-md)`,padding:`20px 24px`,margin:`28px 0`},children:[(0,j.jsx)(`h3`,{style:{marginTop:0,fontSize:`1.3rem`},children:`✎ À toi de jouer`}),(0,j.jsx)(`p`,{style:{marginBottom:8},children:t.exercisePreview.prompt}),t.exercisePreview.hint&&(0,j.jsxs)(`p`,{style:{margin:0,fontSize:`0.9rem`,color:`var(--ink-soft)`},children:[`Indice : `,t.exercisePreview.hint]})]}),r.length>0&&(0,j.jsxs)(`div`,{style:{background:`var(--paper-alt)`,border:`2px dashed var(--dart-blue)`,borderRadius:`var(--radius-md)`,padding:`20px 24px`,margin:`28px 0`},children:[(0,j.jsx)(`h3`,{style:{marginTop:0,fontSize:`1.3rem`},children:`✎ Exercices de cette leçon`}),(0,j.jsx)(`ul`,{style:{margin:0,paddingLeft:`1.2em`},children:r.map(e=>(0,j.jsx)(`li`,{style:{marginBottom:4},children:(0,j.jsx)(Pn,{to:`/exercices/${t.slug}#${e.id}`,children:e.title})},e.id))})]}),n&&(0,j.jsx)(`div`,{style:{marginTop:48,textAlign:`right`},children:(0,j.jsxs)(Pn,{to:`/lecons/${n.slug}`,className:`btn btn--primary`,style:{textDecoration:`none`},children:[`Leçon suivante : `,n.title,` →`]})})]})}function Er(){let e=ar.map(e=>({lesson:e,count:br(e.slug).length})).filter(e=>e.count>0);return(0,j.jsxs)(`section`,{className:`container`,style:{padding:`48px 24px 80px`,maxWidth:760},children:[(0,j.jsx)(`h1`,{children:`Exercices`}),(0,j.jsx)(`p`,{style:{color:`var(--ink-soft)`,maxWidth:`60ch`,marginBottom:32},children:`Choisis une leçon pour voir ses exercices.`}),e.length===0&&(0,j.jsx)(`p`,{style:{color:`var(--ink-soft)`},children:`Aucun exercice disponible pour le moment.`}),(0,j.jsx)(`div`,{style:{display:`grid`,gap:16},children:e.map(({lesson:e,count:t})=>(0,j.jsxs)(Pn,{to:`/exercices/${e.slug}`,className:`exercise-lesson-card`,children:[(0,j.jsx)(`span`,{className:`exercise-lesson-card__number`,children:String(e.id).padStart(2,`0`)}),(0,j.jsxs)(`div`,{children:[(0,j.jsx)(`h3`,{className:`exercise-lesson-card__title`,children:e.title}),(0,j.jsxs)(`p`,{className:`exercise-lesson-card__count`,children:[t,` exercice`,t>1?`s`:``]})]})]},e.slug))})]})}var Dr={facile:{text:`Facile`,color:`var(--success)`},moyen:{text:`Moyen`,color:`var(--accent-coral)`},difficile:{text:`Difficile`,color:`#B33F3F`}};function Or({exercise:e,index:t}){let[n,r]=(0,x.useState)(!1),i=Dr[e.difficulty]??Dr.facile;return(0,j.jsxs)(`div`,{className:`exercise-card`,id:e.id,children:[(0,j.jsxs)(`div`,{className:`exercise-card__header`,children:[(0,j.jsxs)(`span`,{className:`exercise-card__number`,children:[`Exercice `,t+1]}),(0,j.jsx)(`span`,{className:`exercise-card__difficulty`,style:{color:i.color},children:i.text})]}),(0,j.jsx)(`h3`,{className:`exercise-card__title`,children:e.title}),(0,j.jsx)(`p`,{className:`exercise-card__statement`,children:e.statement}),e.starterCode&&(0,j.jsx)(xr,{code:e.starterCode,filename:`à compléter`}),e.hint&&(0,j.jsxs)(`details`,{className:`exercise-card__hint`,children:[(0,j.jsx)(`summary`,{children:`Un indice ?`}),(0,j.jsx)(`p`,{children:e.hint})]}),(0,j.jsx)(`button`,{type:`button`,className:`exercise-card__toggle`,onClick:()=>r(e=>!e),"aria-expanded":n,children:n?`Masquer la correction`:`Voir la correction`}),n&&(0,j.jsx)(xr,{code:e.solutionCode,filename:`correction`})]})}function kr(){let{slug:e}=vt(),t=or(e),n=br(e);return t?(0,j.jsxs)(`section`,{className:`container`,style:{padding:`48px 24px 80px`,maxWidth:760},children:[(0,j.jsx)(Pn,{to:`/exercices`,style:{fontFamily:`var(--font-display)`,fontSize:`1.1rem`},children:`← Toutes les leçons`}),(0,j.jsx)(`div`,{style:{display:`flex`,alignItems:`baseline`,gap:12,marginTop:16,marginBottom:8},children:(0,j.jsx)(`h1`,{style:{margin:0},children:t.title})}),(0,j.jsx)(Pn,{to:`/lecons/${t.slug}`,style:{fontFamily:`var(--font-display)`,fontSize:`1.1rem`},children:`revoir la leçon →`}),n.length===0?(0,j.jsx)(`p`,{style:{color:`var(--ink-soft)`,marginTop:24},children:`Aucun exercice pour cette leçon pour le moment.`}):(0,j.jsx)(`div`,{style:{marginTop:32},children:n.map((e,t)=>(0,j.jsx)(Or,{exercise:e,index:t},e.id))})]}):(0,j.jsxs)(`section`,{className:`container`,style:{padding:`48px 24px`},children:[(0,j.jsx)(`h1`,{children:`Leçon introuvable`}),(0,j.jsx)(Pn,{to:`/exercices`,children:`← Retour aux exercices`})]})}function Ar(){return(0,j.jsxs)(`section`,{className:`container`,style:{padding:`48px 24px 80px`},children:[(0,j.jsx)(`h1`,{children:`À propos`}),(0,j.jsx)(`p`,{style:{color:`var(--ink-soft)`,maxWidth:`60ch`},children:`Le Cahier Dart est un projet pédagogique pour apprendre Dart pas à pas, avec des explications simples et des exemples à tester soi-même.`})]})}function jr(){return(0,j.jsxs)(`section`,{className:`container`,style:{padding:`80px 24px`,textAlign:`center`},children:[(0,j.jsx)(`h1`,{children:`Page arrachée du cahier`}),(0,j.jsx)(`p`,{style:{color:`var(--ink-soft)`},children:`Cette page n'existe pas.`}),(0,j.jsx)(Pn,{to:`/`,style:{fontFamily:`var(--font-display)`,fontSize:`1.3rem`},children:`← Retour à l'accueil`})]})}function Mr(){return(0,j.jsx)(rr,{children:(0,j.jsxs)(Wt,{children:[(0,j.jsx)(Ht,{path:`/`,element:(0,j.jsx)(ir,{})}),(0,j.jsx)(Ht,{path:`/lecons`,element:(0,j.jsx)(cr,{})}),(0,j.jsx)(Ht,{path:`/lecons/:slug`,element:(0,j.jsx)(Tr,{})}),(0,j.jsx)(Ht,{path:`/exercices`,element:(0,j.jsx)(Er,{})}),(0,j.jsx)(Ht,{path:`/exercices/:slug`,element:(0,j.jsx)(kr,{})}),(0,j.jsx)(Ht,{path:`/a-propos`,element:(0,j.jsx)(Ar,{})}),(0,j.jsx)(Ht,{path:`*`,element:(0,j.jsx)(jr,{})})]})})}Qn.createRoot(document.getElementById(`root`)).render((0,j.jsx)(x.StrictMode,{children:(0,j.jsx)(Mn,{basename:`/learn-dart/`,children:(0,j.jsx)(Mr,{})})}));
