@@ -41,7 +41,7 @@ const exercises2 = [
   int age = 25;
   double taille = 1.78;
 
-  print('\$prenom a \$age ans et mesure \$taille m.');
+  print('$prenom a $age ans et mesure $taille m.');
 }`,
     hint: 'Place $ directement devant le nom de la variable, à l\u2019intérieur des guillemets.',
   },

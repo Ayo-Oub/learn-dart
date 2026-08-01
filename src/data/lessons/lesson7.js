@@ -142,5 +142,5 @@ print(listeSansDoublons);         // [12, 15, 9, 18]`,
     hint: 'set1.intersection(set2) renvoie un nouveau Set contenant uniquement les éléments présents dans les deux.',
   },
 
-  next: null,
+  next: 'dictionnaires',
 }

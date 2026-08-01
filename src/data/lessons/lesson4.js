@@ -28,7 +28,7 @@ print('Ligne 3');
 
 // Avec une boucle : même résultat, en moins de code
 for (int i = 1; i <= 3; i++) {
-  print('Ligne \$i');
+  print('Ligne $i');
 }`,
     },
     {
@@ -41,7 +41,7 @@ nombre de répétitions. Elle a trois parties, séparées par des points-virgule
 2. **La condition** : \`i < 5\` — tant qu'elle est vraie, la boucle continue.
 3. **L'incrémentation** : \`i++\` — ce qui se passe à la fin de chaque tour.`,
       code: `for (int i = 0; i < 5; i++) {
-  print('Tour numéro \$i');
+  print('Tour numéro $i');
 }
 // Affiche : Tour numéro 0, 1, 2, 3, 4`,
     },
@@ -56,7 +56,7 @@ sinon la boucle tourne indéfiniment (boucle infinie).`,
       code: `int compteur = 0;
 
 while (compteur < 3) {
-  print('Compteur : \$compteur');
+  print('Compteur : $compteur');
   compteur++;   // sans cette ligne, la boucle ne s'arrête jamais
 }`,
     },
@@ -69,7 +69,7 @@ même si la condition est fausse dès le départ.`,
       code: `int compteur = 10;
 
 do {
-  print('Passage numéro \$compteur');
+  print('Passage numéro $compteur');
   compteur++;
 } while (compteur < 3);
 // Affiche quand même "Passage numéro 10" une fois,
@@ -103,9 +103,9 @@ for (int i = 0; i < 5; i++) {
   codeExample: `void main() {
   for (int i = 1; i <= 5; i++) {
     if (i % 2 == 0) {
-      print('\$i est pair');
+      print('$i est pair');
     } else {
-      print('\$i est impair');
+      print('$i est impair');
     }
   }
 }`,
@@ -123,5 +123,5 @@ for (int i = 0; i < 5; i++) {
     hint: 'Utilise continue à l\u2019intérieur d\u2019un if qui teste si le nombre vaut 7.',
   },
 
-  next: null,
+  next: 'fonctions',
 }

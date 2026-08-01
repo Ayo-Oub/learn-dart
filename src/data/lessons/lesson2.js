@@ -77,7 +77,7 @@ avec des accolades : \`\${expression}\`.`,
       code: `String prenom = 'Ayoub';
 int age = 25;
 
-print('Je m\\'appelle \$prenom et j\\'ai \$age ans.');
+print('Je m\\'appelle $prenom et j\\'ai $age ans.');
 print('Dans 5 ans, j\\'aurai \${age + 5} ans.');`,
     },
   ],
@@ -88,7 +88,7 @@ print('Dans 5 ans, j\\'aurai \${age + 5} ans.');`,
   double taille = 1.78;
   bool estEtudiant = true;
 
-  print('\$prenom a \$age ans et mesure \$taille m.');
+  print('$prenom a $age ans et mesure $taille m.');
 }`,
 
   keyPoints: [
@@ -101,8 +101,8 @@ print('Dans 5 ans, j\\'aurai \${age + 5} ans.');`,
   exercisePreview: {
     prompt:
       "Déclare trois variables (ton prénom, ton âge, ta ville) et affiche-les dans une seule phrase avec l'interpolation de chaînes.",
-    hint: "Utilise \$nomDeVariable directement à l'intérieur d'une chaîne entre guillemets.",
+    hint: "Utilise $nomDeVariable directement à l'intérieur d'une chaîne entre guillemets.",
   },
 
-  next: null,
+  next: 'conditions',
 }

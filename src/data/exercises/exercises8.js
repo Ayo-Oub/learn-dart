@@ -170,7 +170,7 @@ void main() {
   Map<String, int> ages = {'Ayoub': 25, 'Sara': 22, 'Karim': 30};
 
   ages.forEach((nom, age) {
-    print('\$nom a \$age ans');
+    print('$nom a $age ans');
   });
 }`,
     hint: 'map.forEach((cle, valeur) => ...) reçoit les deux en même temps, sans boucle for-in classique.',

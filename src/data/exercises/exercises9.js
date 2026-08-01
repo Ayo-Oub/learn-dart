@@ -1,9 +1,9 @@
 const exercises9 = [
   {
-    id: "ex-9-1",
-    lessonSlug: "iteration-avancee",
-    title: "Doubler chaque nombre",
-    difficulty: "facile",
+    id: 'ex-9-1',
+    lessonSlug: 'iteration-avancee',
+    title: 'Doubler chaque nombre',
+    difficulty: 'facile',
     statement:
       "À partir d'une liste de nombres entiers, utilise map() pour créer une nouvelle liste où chaque nombre est doublé.",
     starterCode: `void main() {
@@ -19,13 +19,13 @@ const exercises9 = [
 
   print(doubled);   // [2, 4, 6, 8, 10]
 }`,
-    hint: ".map((number) => number * 2) transforme chaque élément ; ajoute .toList() pour obtenir une vraie liste.",
+    hint: '.map((number) => number * 2) transforme chaque élément ; ajoute .toList() pour obtenir une vraie liste.',
   },
   {
-    id: "ex-9-2",
-    lessonSlug: "iteration-avancee",
-    title: "Les mots en majuscules",
-    difficulty: "facile",
+    id: 'ex-9-2',
+    lessonSlug: 'iteration-avancee',
+    title: 'Les mots en majuscules',
+    difficulty: 'facile',
     statement:
       "À partir d'une liste de String, utilise map() pour créer une nouvelle liste avec chaque mot en majuscules (toUpperCase()).",
     starterCode: `void main() {
@@ -41,13 +41,13 @@ const exercises9 = [
 
   print(uppercased);   // [DART, FLUTTER, REACT]
 }`,
-    hint: "word.toUpperCase() renvoie le mot en majuscules ; combine-le avec map().",
+    hint: 'word.toUpperCase() renvoie le mot en majuscules ; combine-le avec map().',
   },
   {
-    id: "ex-9-3",
-    lessonSlug: "iteration-avancee",
-    title: "Filtrer les majeurs",
-    difficulty: "moyen",
+    id: 'ex-9-3',
+    lessonSlug: 'iteration-avancee',
+    title: 'Filtrer les majeurs',
+    difficulty: 'moyen',
     statement:
       "À partir d'une liste d'âges, utilise where() pour créer une nouvelle liste contenant uniquement les âges supérieurs ou égaux à 18.",
     starterCode: `void main() {
@@ -63,13 +63,13 @@ const exercises9 = [
 
   print(adultAges);   // [22, 18, 30]
 }`,
-    hint: ".where((age) => age >= 18) garde uniquement les éléments qui vérifient la condition.",
+    hint: '.where((age) => age >= 18) garde uniquement les éléments qui vérifient la condition.',
   },
   {
-    id: "ex-9-4",
-    lessonSlug: "iteration-avancee",
-    title: "Le produit de tous les nombres",
-    difficulty: "moyen",
+    id: 'ex-9-4',
+    lessonSlug: 'iteration-avancee',
+    title: 'Le produit de tous les nombres',
+    difficulty: 'moyen',
     statement:
       "À partir d'une liste de nombres entiers, utilise reduce() pour calculer le produit de tous les éléments (leur multiplication).",
     starterCode: `void main() {
@@ -85,13 +85,13 @@ const exercises9 = [
 
   print(product);   // 24
 }`,
-    hint: "reduce() combine deux éléments à la fois ; remplace + par * pour un produit au lieu d\u2019une somme.",
+    hint: 'reduce() combine deux éléments à la fois ; remplace + par * pour un produit au lieu d\u2019une somme.',
   },
   {
-    id: "ex-9-5",
-    lessonSlug: "iteration-avancee",
-    title: "La somme des notes suffisantes",
-    difficulty: "moyen",
+    id: 'ex-9-5',
+    lessonSlug: 'iteration-avancee',
+    title: 'La somme des notes suffisantes',
+    difficulty: 'moyen',
     statement:
       "À partir d'une liste de notes, garde uniquement celles supérieures ou égales à 10 avec where(), puis calcule leur somme avec fold().",
     starterCode: `void main() {
@@ -108,13 +108,13 @@ const exercises9 = [
 
   print(total);   // 45
 }`,
-    hint: "Combine .where() pour filtrer et .fold(0, ...) pour additionner le résultat.",
+    hint: 'Combine .where() pour filtrer et .fold(0, ...) pour additionner le résultat.',
   },
   {
-    id: "ex-9-6",
-    lessonSlug: "iteration-avancee",
-    title: "Tous majeurs ou au moins un mineur ?",
-    difficulty: "difficile",
+    id: 'ex-9-6',
+    lessonSlug: 'iteration-avancee',
+    title: 'Tous majeurs ou au moins un mineur ?',
+    difficulty: 'difficile',
     statement:
       "À partir d'une liste d'âges, affiche true/false pour indiquer si tous sont majeurs (every()), puis affiche true/false pour indiquer si au moins un est mineur (any()).",
     starterCode: `void main() {
@@ -133,13 +133,13 @@ const exercises9 = [
   bool hasMinor = ages.any((age) => age < 18);
   print(hasMinor);    // true
 }`,
-    hint: "every() = tous vérifient la condition ; any() = au moins un la vérifie.",
+    hint: 'every() = tous vérifient la condition ; any() = au moins un la vérifie.',
   },
   {
-    id: "ex-9-7",
-    lessonSlug: "iteration-avancee",
-    title: "Liste de produits : les noms affichés",
-    difficulty: "facile",
+    id: 'ex-9-7',
+    lessonSlug: 'iteration-avancee',
+    title: 'Liste de produits : les noms affichés',
+    difficulty: 'facile',
     statement:
       "Une app e-commerce reçoit une liste de produits sous forme de List<Map<String, dynamic>>. Utilise map() pour extraire uniquement les noms des produits, prêts à être affichés dans une liste déroulante (ListView).",
     starterCode: `void main() {
@@ -166,10 +166,10 @@ const exercises9 = [
     hint: "product['name'] accède au champ name de la Map ; as String précise le type attendu pour Dart.",
   },
   {
-    id: "ex-9-8",
-    lessonSlug: "iteration-avancee",
-    title: "Panier : les articles en stock",
-    difficulty: "facile",
+    id: 'ex-9-8',
+    lessonSlug: 'iteration-avancee',
+    title: 'Panier : les articles en stock',
+    difficulty: 'facile',
     statement:
       "Une liste de produits contient un champ inStock (bool). Utilise where() pour ne garder que les produits disponibles, comme le ferait un écran de boutique qui masque les articles en rupture.",
     starterCode: `void main() {
@@ -198,10 +198,10 @@ const exercises9 = [
     hint: "product['inStock'] == true garde uniquement les produits dont ce champ vaut true.",
   },
   {
-    id: "ex-9-9",
-    lessonSlug: "iteration-avancee",
-    title: "Panier : le total à payer",
-    difficulty: "moyen",
+    id: 'ex-9-9',
+    lessonSlug: 'iteration-avancee',
+    title: 'Panier : le total à payer',
+    difficulty: 'moyen',
     statement:
       "Un panier contient une liste d'articles avec un prix (price) et une quantité (quantity). Calcule le total à payer avec fold(), comme sur l'écran de checkout d'une app d'achat.",
     starterCode: `void main() {
@@ -225,13 +225,13 @@ const exercises9 = [
 
   print(total);   // 315
 }`,
-    hint: "Dans le fold, calcule item['price'] * item['quantity'] pour chaque article avant de l\u2019additionner.",
+    hint: 'Dans le fold, calcule item[\'price\'] * item[\'quantity\'] pour chaque article avant de l\u2019additionner.',
   },
   {
-    id: "ex-9-10",
-    lessonSlug: "iteration-avancee",
-    title: "Todo list : les tâches restantes",
-    difficulty: "facile",
+    id: 'ex-9-10',
+    lessonSlug: 'iteration-avancee',
+    title: 'Todo list : les tâches restantes',
+    difficulty: 'facile',
     statement:
       "Une liste de tâches (todos) a un champ done (bool). Utilise where() pour compter combien de tâches ne sont pas encore terminées, comme le badge d'une app de todo list.",
     starterCode: `void main() {
@@ -255,13 +255,13 @@ const exercises9 = [
 
   print(remainingCount);   // 2
 }`,
-    hint: "where(...).length compte directement le nombre d\u2019éléments filtrés, sans .toList().",
+    hint: 'where(...).length compte directement le nombre d\u2019éléments filtrés, sans .toList().',
   },
   {
-    id: "ex-9-11",
-    lessonSlug: "iteration-avancee",
-    title: "Formulaire : tous les champs sont-ils remplis ?",
-    difficulty: "moyen",
+    id: 'ex-9-11',
+    lessonSlug: 'iteration-avancee',
+    title: 'Formulaire : tous les champs sont-ils remplis ?',
+    difficulty: 'moyen',
     statement:
       "Un formulaire d'inscription a plusieurs champs sous forme de List<String>. Utilise every() pour vérifier qu'aucun champ n'est vide, avant d'activer le bouton 'Valider'.",
     starterCode: `void main() {
@@ -277,13 +277,13 @@ const exercises9 = [
 
   print(isFormValid);   // true : le bouton Valider peut être activé
 }`,
-    hint: "field.isNotEmpty renvoie true si le champ n\u2019est pas une chaîne vide ; every() vérifie que c\u2019est vrai pour tous.",
+    hint: 'field.isNotEmpty renvoie true si le champ n\u2019est pas une chaîne vide ; every() vérifie que c\u2019est vrai pour tous.',
   },
   {
-    id: "ex-9-12",
-    lessonSlug: "iteration-avancee",
-    title: "Notifications : y a-t-il du nouveau ?",
-    difficulty: "moyen",
+    id: 'ex-9-12',
+    lessonSlug: 'iteration-avancee',
+    title: 'Notifications : y a-t-il du nouveau ?',
+    difficulty: 'moyen',
     statement:
       "Une liste de notifications a un champ read (bool). Utilise any() pour savoir s'il faut afficher un point rouge sur l'icône de notifications (au moins une non lue).",
     starterCode: `void main() {
@@ -307,13 +307,13 @@ const exercises9 = [
 
   print(hasUnread);   // true : on affiche le point rouge
 }`,
-    hint: "any((notification) => notification['read'] == false) suffit dès qu\u2019une seule correspond.",
+    hint: 'any((notification) => notification[\'read\'] == false) suffit dès qu\u2019une seule correspond.',
   },
   {
-    id: "ex-9-13",
-    lessonSlug: "iteration-avancee",
-    title: "Contacts : recherche par nom",
-    difficulty: "moyen",
+    id: 'ex-9-13',
+    lessonSlug: 'iteration-avancee',
+    title: 'Contacts : recherche par nom',
+    difficulty: 'moyen',
     statement:
       "Une liste de contacts contient des noms. Simule une barre de recherche : utilise where() pour ne garder que les contacts dont le nom contient une chaîne saisie par l'utilisateur (insensible à la casse).",
     starterCode: `void main() {
@@ -333,13 +333,13 @@ const exercises9 = [
 
   print(results);   // [Ayoub Amrani, Yassine Ayoub]
 }`,
-    hint: "toLowerCase() sur les deux côtés avant contains() rend la recherche insensible à la casse.",
+    hint: 'toLowerCase() sur les deux côtés avant contains() rend la recherche insensible à la casse.',
   },
   {
-    id: "ex-9-14",
-    lessonSlug: "iteration-avancee",
-    title: "Utilisateurs : la moyenne des scores",
-    difficulty: "difficile",
+    id: 'ex-9-14',
+    lessonSlug: 'iteration-avancee',
+    title: 'Utilisateurs : la moyenne des scores',
+    difficulty: 'difficile',
     statement:
       "Une liste d'utilisateurs contient chacun un score. Utilise map() pour extraire les scores, puis fold() pour calculer leur moyenne, comme un écran de classement (leaderboard).",
     starterCode: `void main() {
@@ -365,13 +365,13 @@ const exercises9 = [
 
   print(average);   // 83.0
 }`,
-    hint: "Sépare le problème en deux étapes : map() pour extraire les scores, puis fold() pour les additionner.",
+    hint: 'Sépare le problème en deux étapes : map() pour extraire les scores, puis fold() pour les additionner.',
   },
   {
-    id: "ex-9-15",
-    lessonSlug: "iteration-avancee",
-    title: "Panier : appliquer une remise aux articles chers",
-    difficulty: "difficile",
+    id: 'ex-9-15',
+    lessonSlug: 'iteration-avancee',
+    title: 'Panier : appliquer une remise aux articles chers',
+    difficulty: 'difficile',
     statement:
       "Dans un panier, applique une remise de 20% uniquement aux articles dont le prix dépasse 100 DH, grâce à map() combiné à une condition ternaire à l'intérieur. Affiche les nouveaux prix.",
     starterCode: `void main() {
@@ -400,8 +400,8 @@ const exercises9 = [
 
   print(discountedPrices);   // [90.0, 280.0, 60.0, 336.0]
 }`,
-    hint: "À l\u2019intérieur du map(), tu peux utiliser un bloc { } avec plusieurs lignes, pas seulement une expression courte.",
+    hint: 'À l\u2019intérieur du map(), tu peux utiliser un bloc { } avec plusieurs lignes, pas seulement une expression courte.',
   },
-];
+]
 
-export default exercises9;
+export default exercises9

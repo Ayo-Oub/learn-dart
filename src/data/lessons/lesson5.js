@@ -30,7 +30,7 @@ int additionner(int a, int b) {
 
 // type de retour : void, la fonction ne renvoie rien
 void direBonjour(String prenom) {
-  print('Bonjour, \$prenom !');
+  print('Bonjour, $prenom !');
 }
 
 void main() {
@@ -55,12 +55,12 @@ int soustraire(int a, int b) => a - b;
 
 // Paramètres nommés, avec un obligatoire (required) et un par défaut
 void afficherProfil({required String prenom, int age = 18}) {
-  print('\$prenom, \$age ans');
+  print('$prenom, $age ans');
 }
 
 // Paramètre optionnel avec valeur par défaut
 String saluer(String prenom, [String ville = 'Oujda']) {
-  return 'Bonjour \$prenom, de \$ville !';
+  return 'Bonjour $prenom, de $ville !';
 }
 
 void main() {
@@ -103,12 +103,12 @@ Tu en croiseras beaucoup avec les listes, par exemple avec \`forEach\`.`,
 void main() {
   // Fonction anonyme passée directement en paramètre
   executerAction('Ayoub', (nom) {
-    print('Salut \$nom !');
+    print('Salut $nom !');
   });
 
   // forEach attend aussi une fonction en callback
   List<String> fruits = ['pomme', 'banane', 'orange'];
-  fruits.forEach((fruit) => print('J\\'aime le \$fruit'));
+  fruits.forEach((fruit) => print('J\\'aime le $fruit'));
 }`,
     },
     {
@@ -126,7 +126,7 @@ son propre \`compte\`, indépendant des autres.`,
 
   return () {
     compte++;
-    print('Compte : \$compte');
+    print('Compte : $compte');
   };
 }
 
@@ -152,7 +152,7 @@ void executerSurListe(List<int> nombres, void Function(int) action) {
 void main() {
   print(addition(4, 6));   // 10
 
-  executerSurListe([1, 2, 3], (n) => print('Nombre : \$n'));
+  executerSurListe([1, 2, 3], (n) => print('Nombre : $n'));
 }`,
 
   keyPoints: [

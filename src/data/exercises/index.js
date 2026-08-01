@@ -7,16 +7,20 @@ import exercises6 from './exercises6.js'
 import exercises7 from './exercises7.js'
 import exercises8 from './exercises8.js'
 import exercises9 from './exercises9.js'
+import exercises10 from './exercises10.js'
 
-const exercises = [...exercises1,
+const exercises = [
+  ...exercises1,
   ...exercises2,
   ...exercises3,
   ...exercises4,
   ...exercises5,
-...exercises6,
-...exercises7,
-...exercises8,
-...exercises9]
+  ...exercises6,
+  ...exercises7,
+  ...exercises8,
+  ...exercises9,
+  ...exercises10,
+]
 
 export default exercises
 

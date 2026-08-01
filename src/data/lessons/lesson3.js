@@ -118,5 +118,5 @@ print(statut);   // majeur`,
     hint: 'Un nombre est pair si le reste de sa division par 2 est égal à 0 : nombre % 2 == 0.',
   },
 
-  next: null,
+  next: 'boucles',
 }

@@ -91,9 +91,9 @@ void main() {
 }`,
     solutionCode: `void saluer(String prenom, [String langue = 'fr']) {
   if (langue == 'en') {
-    print('Hello \$prenom');
+    print('Hello $prenom');
   } else {
-    print('Bonjour \$prenom');
+    print('Bonjour $prenom');
   }
 }
 
@@ -121,9 +121,9 @@ void main() {
     solutionCode: `void afficherProduit({required String nom, required double prix, bool enPromo = false}) {
   if (enPromo) {
     double prixReduit = prix * 0.9;
-    print('\$nom : \$prixReduit DH (promo)');
+    print('$nom : $prixReduit DH (promo)');
   } else {
-    print('\$nom : \$prix DH');
+    print('$nom : $prix DH');
   }
 }
 
@@ -178,7 +178,7 @@ void main() {
 
 void main() {
   executerAction('Ayoub', (nom) {
-    print('Salut \$nom !');
+    print('Salut $nom !');
   });
 }`,
     hint: "action(prenom) exécute la fonction reçue en paramètre, en lui passant prenom.",
@@ -198,7 +198,7 @@ void main() {
     solutionCode: `void main() {
   List<String> fruits = ['pomme', 'banane', 'orange'];
 
-  fruits.forEach((fruit) => print('J\\'aime le \$fruit'));
+  fruits.forEach((fruit) => print('J\\'aime le $fruit'));
 }`,
     hint: '.forEach() attend une fonction avec un seul paramètre : (element) => ...',
   },

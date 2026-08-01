@@ -97,7 +97,7 @@ print(ages.keys);      // (Ayoub, Sara, Karim)
 print(ages.values);    // (25, 22, 30)
 
 ages.forEach((nom, age) {
-  print('\$nom a \$age ans');
+  print('$nom a $age ans');
 });
 
 for (var entree in ages.entries) {
@@ -116,7 +116,7 @@ for (var entree in ages.entries) {
   stock['pommes'] = stock['pommes']! - 3;
 
   stock.forEach((fruit, quantite) {
-    print('\$fruit : \$quantite');
+    print('$fruit : $quantite');
   });
 }`,
 
@@ -133,5 +133,5 @@ for (var entree in ages.entries) {
     hint: 'map.forEach((cle, valeur) => print(...)); donne accès à la clé et à la valeur en même temps.',
   },
 
-  next: null,
+  next: 'iteration-avancee',
 }

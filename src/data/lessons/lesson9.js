@@ -121,8 +121,8 @@ print(allAdults);  // false : 15 n'est pas majeur`,
   int total = passingScores.fold(0, (accumulator, current) => accumulator + current);
   double average = total / passingScores.length;
 
-  print('Notes retenues : \$passingScores');
-  print('Moyenne : \$average');
+  print('Notes retenues : $passingScores');
+  print('Moyenne : $average');
 }`,
 
   keyPoints: [
@@ -139,5 +139,5 @@ print(allAdults);  // false : 15 n'est pas majeur`,
     hint: "numbers.where((n) => n % 2 == 0).toList() puis .fold(0, (acc, current) => acc + current) sur le résultat.",
   },
 
-  next: null,
+  next: 'poo-classes',
 }

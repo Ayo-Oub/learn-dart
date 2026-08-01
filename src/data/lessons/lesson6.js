@@ -94,11 +94,11 @@ print(fruits);                     // []`,
 
 // Avec for-in
 for (String fruit in fruits) {
-  print('J\\'aime le \$fruit');
+  print('J\\'aime le $fruit');
 }
 
 // Avec forEach, équivalent mais plus court
-fruits.forEach((fruit) => print('J\\'aime le \$fruit'));`,
+fruits.forEach((fruit) => print('J\\'aime le $fruit'));`,
     },
     {
       id: 'spread-operator',
@@ -161,7 +161,7 @@ print(notes.join(', '));         // 9, 12, 15, 18`,
 
   double moyenne = somme / notes.length;
   print('Notes : \${notes.join(', ')}');
-  print('Moyenne : \$moyenne');
+  print('Moyenne : $moyenne');
 }`,
 
   keyPoints: [
@@ -179,5 +179,5 @@ print(notes.join(', '));         // 9, 12, 15, 18`,
     hint: '.insert(1, valeur) place la valeur à l\u2019index 1, en décalant les autres vers la droite.',
   },
 
-  next: null,
+  next: 'ensembles',
 }

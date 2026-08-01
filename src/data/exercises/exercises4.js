@@ -32,7 +32,7 @@ const exercises4 = [
   int table = 5;
 
   for (int i = 1; i <= 10; i++) {
-    print('\$table x \$i = \${table * i}');
+    print('$table x $i = \${table * i}');
   }
 }`,
     hint: 'Utilise l\u2019interpolation \${expression} pour calculer table * i directement dans le print.',
