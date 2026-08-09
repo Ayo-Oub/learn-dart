@@ -8,6 +8,7 @@ import exercises7 from './exercises7.js'
 import exercises8 from './exercises8.js'
 import exercises9 from './exercises9.js'
 import exercises10 from './exercises10.js'
+import exercises11 from "./exercises11.js";
 
 const exercises = [
   ...exercises1,
@@ -20,7 +21,8 @@ const exercises = [
   ...exercises8,
   ...exercises9,
   ...exercises10,
-]
+  ...exercises11,
+];
 
 export default exercises
 

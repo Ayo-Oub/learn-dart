@@ -8,6 +8,7 @@ import lesson7 from './lesson7.js'
 import lesson8 from './lesson8.js'
 import lesson9 from './lesson9.js'
 import lesson10 from './lesson10.js'
+import lesson11 from './lesson11.js'
 
 const lessons = [
   lesson1,
@@ -20,6 +21,7 @@ const lessons = [
   lesson8,
   lesson9,
   lesson10,
+  lesson11
 ]
 
 export default lessons
